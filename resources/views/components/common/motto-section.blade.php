@@ -16,8 +16,8 @@
                         </g>
                         <path id="Icon_awesome-heart" data-name="Icon awesome-heart"
                             d="M25.483,3.187a7.538,7.538,0,0,0-10.286.75L14.111,5.056,13.025,3.937A7.537,7.537,0,0,0,2.74,3.187a7.915,7.915,0,0,0-.546,11.46L12.86,25.66a1.728,1.728,0,0,0,2.5,0L26.023,14.647a7.91,7.91,0,0,0-.54-11.46Z"
-                            transform="translate(18.78 19.654)" fill="{{ $isActive ? '#d97373' : 'none' }}"
-                            stroke="{{ $isActive ? '#d97373' : '#404040' }}" strokeWidth="2" />
+                            transform="translate(18.78 19.654)" fill="none"
+                            stroke="#404040" strokeWidth="2" />
                     </svg>
                 </button>
             </div>
