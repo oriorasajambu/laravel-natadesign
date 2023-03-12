@@ -22,7 +22,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%home%')->firstOrFail();
         $aboutUs = AboutUs::first();
-        $services = AvailableService::all();
+        $availableService = AvailableService::all();
         $workflows = Workflows::all();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
@@ -46,7 +46,7 @@ class PageController extends Controller
         $data = [
             'seo' => $seoCategory->seo,
             'aboutUs' => $aboutUs,
-            'services' => $services,
+            'availableService' => $availableService,
             'workflows' => $workflows,
             'albums' => $albums,
             'motto' => $motto,
