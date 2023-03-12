@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class DividerXComponent extends Component
 {
-    public string $class;
+    public string $class = '';
     /**
      * Create a new component instance.
      *
