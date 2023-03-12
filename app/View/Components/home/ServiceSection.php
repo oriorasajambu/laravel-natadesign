@@ -6,15 +6,13 @@ use Illuminate\View\Component;
 
 class ServiceSection extends Component
 {
-    public $services;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($availableService)
+    public function __construct()
     {
-        $this->services = $availableService;
     }
 
     /**

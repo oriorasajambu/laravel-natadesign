@@ -9,18 +9,7 @@
                 </div>
                 <div
                     class="flex flex-row flex-wrap sm:flex-nowrap sm:flex-col gap-x-10 gap-y-10 lg:gap-x-20 lg:gap-y-12 justify-between">
-                    @foreach ($services as $service)
-                        <div class="grow lg:basis-[44%] md:basis-[44%]">
-                            <x-common.divider-x-component />
-                            <h3
-                                class="font-dm-sans font-normal text-primary pt-6 lg:pt-12 pb-6 lg:text-5xl md:text-[32px] sm:text-[32px] text-xl">
-                                {{ $service->title }}
-                            </h3>
-                            <p class="font-dm-sans text-partial lg:text-2xl md:text-xl sm:text-xl leading-8">
-                                {{ $service->content }}
-                            </p>
-                        </div>
-                    @endforeach
+                    {{ $slot }}
                     <x-common.divider-x-component class="block lg:hidden md:hidden" />
                 </div>
             </div>

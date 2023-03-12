@@ -1,9 +1,9 @@
-@extends("layout")
-@section("head")
+@extends('layout')
+@section('head')
     <x-custom-head-component :seo="$seo" />
 @endsection
-@section("content")
-    <div style="background-image: url({{ asset("assets/fixed_background.webp") }})"
+@section('content')
+    <div style="background-image: url({{ asset('assets/fixed_background.webp') }})"
         class="h-screen w-full bg-no-repeat bg-cover bg-center bg-fixed absolute" />
 
     <x-home.heroes-section />
@@ -11,7 +11,20 @@
     <x-home.about-us-section headline="{{ $aboutUs->headline }}" title="{{ $aboutUs->title_1 }}"
         content="{{ $aboutUs->content_1 }}" />
 
-    <x-home.service-section :availableService="$availableService" />
+    <x-home.service-section>
+        @foreach ($availableService as $service)
+            <div class="grow lg:basis-[44%] md:basis-[44%]">
+                <x-common.divider-x-component />
+                <h3
+                    class="font-dm-sans font-normal text-primary pt-6 lg:pt-12 pb-6 lg:text-5xl md:text-[32px] sm:text-[32px] text-xl">
+                    {{ $service->title }}
+                </h3>
+                <p class="font-dm-sans text-partial lg:text-2xl md:text-xl sm:text-xl leading-8">
+                    {{ $service->content }}
+                </p>
+            </div>
+        @endforeach
+    </x-home.service-section>
 
     <x-home.workflows-section :workflows="$workflows" />
 
@@ -46,7 +59,7 @@
 
     <x-common.footer-section />
 @endsection
-@section("scripts")
+@section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
