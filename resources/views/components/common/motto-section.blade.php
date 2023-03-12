@@ -7,7 +7,7 @@
                 </p>
                 <button aria-label="Give Us Heart" class="relative flex justify-center items-center">
                     <span
-                        class="{{ $isActive ? 'hidden' : 'animate-ping' }} absolute inline-flex h-8 w-8 rounded-full bg-[#d97373] opacity-75"></span>
+                        class="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-[#d97373] opacity-75"></span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-[50px] h-[50px]" viewBox="0 0 67 67">
                         <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0 -0.499)" fill="none"
                             stroke="#404040" strokeWidth="2">
