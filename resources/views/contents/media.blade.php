@@ -21,7 +21,7 @@
                         <div class="w-full aspect-square relative mb-12">
                             <img src={{ $article->thumbnail_url }} alt={{ $article->title }} />
                         </div>
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh
                                 {{ $article->seo->meta_authors }}
@@ -51,7 +51,7 @@
                                 </a>
                             </div>
                         </div>
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                         <p class="mt-12 font-dm-sans text-secondary">
                             {!! $article->content !!}
                         </p>

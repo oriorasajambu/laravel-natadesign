@@ -44,7 +44,7 @@
                             class="uppercase text-partial font-play-serif font-bold text-center lg:text-4xl md:text-2xl sm:text-2xl xs:text-xl mt-5 mb-7">
                             Restoran
                         </h2>
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                     </div>
                     <div class="flex flex-col basis-[31%] justify-center">
                         <div class="aspect-square bg-no-repeat bg-cover bg-center p-6 xs:p-0"
@@ -58,7 +58,7 @@
                             class="uppercase text-partial font-play-serif font-bold text-center lg:text-4xl md:text-2xl sm:text-2xl xs:text-xl mt-5 mb-7">
                             Coffe Shop
                         </h2>
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                     </div>
                     <div class="flex flex-col basis-[31%] justify-center">
                         <div class="aspect-square bg-no-repeat bg-cover bg-center p-6 xs:p-0"
@@ -71,7 +71,7 @@
                         <h2
                             class="uppercase text-partial font-play-serif font-bold text-center lg:text-4xl md:text-2xl sm:text-2xl xs:text-xl mt-5 mb-7">
                             Cafe</h2>
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                     </div>
                 </div>
                 <p

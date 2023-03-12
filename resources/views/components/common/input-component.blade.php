@@ -10,5 +10,5 @@
             placeholder="{{ $placeHolder }}" required
             class='appearance-none bg-transparent border-none w-full text-partial font-dm-sans leading-tight focus:outline-none' />
     @endif
-    <x-common.divider-x-component />
+    <x-common.divider-x-component class="" />
 </div>

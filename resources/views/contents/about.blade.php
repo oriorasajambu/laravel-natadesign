@@ -42,7 +42,7 @@
                             </p>
                         </div>
                     </div>
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     <div class="flex lg:flex-row flex-wrap pb-20 lg:mt-20 mt-10">
                         <div class="lg:basis-1/3 md:basis-1/3 lg:pr-20 md:pr-0">
                             <h3 class="text-3xl font-dm-sans font-bold text-partial uppercase">{{ $about->title_3 }}</h3>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="relative">
                         <x-common.divider-y-component class="xs:hidden block" />
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                         <div
                             class="grid grid-cols-2 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
                             @foreach ($employees as $key => $employee)
@@ -93,7 +93,7 @@
         <x-home.service-section>
             @foreach ($services as $service)
                 <div class="grow lg:basis-[44%] md:basis-[44%]">
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     <h3
                         class="font-dm-sans font-normal text-primary pt-6 lg:pt-12 pb-6 lg:text-5xl md:text-[32px] sm:text-[32px] text-xl">
                         {{ $service->title }}
@@ -110,7 +110,7 @@
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
             </div>
         </div>
 
@@ -136,7 +136,7 @@
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
             </div>
         </div>
 

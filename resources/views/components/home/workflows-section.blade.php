@@ -9,11 +9,11 @@
                     Bagaimana Cara Kerjanya?
                 </x-common.subtitle-component>
             </div>
-            <x-common.divider-x-component />
+            <x-common.divider-x-component class="" />
             @foreach ($workflows as $key => $workflow)
                 <x-common.accordion-component class="lg:px-12 md:px-12 sm:px-12" title="{{ $workflow->title }}"
                     content="{{ $workflow->content }}" position="{{ $key + 1 }}" />
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
             @endforeach
         </div>
     </div>

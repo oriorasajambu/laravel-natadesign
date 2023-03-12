@@ -14,7 +14,7 @@
     <x-home.service-section>
         @foreach ($availableService as $service)
             <div class="grow lg:basis-[44%] md:basis-[44%]">
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
                 <h3
                     class="font-dm-sans font-normal text-primary pt-6 lg:pt-12 pb-6 lg:text-5xl md:text-[32px] sm:text-[32px] text-xl">
                     {{ $service->title }}

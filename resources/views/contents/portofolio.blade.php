@@ -17,7 +17,7 @@
                             {{ $album->title }}
                         </x-common.subtitle-component>
                     </div>
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     <div
                         class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
                         <div class="lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
@@ -48,7 +48,7 @@
                             </p>
                         </div>
                     </div>
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                 </div>
             </div>
         </div>

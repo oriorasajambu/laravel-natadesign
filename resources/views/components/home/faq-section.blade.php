@@ -8,11 +8,11 @@
                     </x-common.subtitle-component>
                 </div>
                 <div class="flex flex-col w-full">
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     @foreach ($faqs as $faq)
                         <x-common.accordion-component class="lg:px-12 md:px-12 sm:px-12" title="{{ $faq->title }}"
                             content="{{ $faq->content }}" position="-1" />
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                     @endforeach
                 </div>
             </div>

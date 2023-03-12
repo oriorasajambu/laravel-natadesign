@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
             </div>
         </div>
 
@@ -29,7 +29,7 @@
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
-                <x-common.divider-x-component />
+                <x-common.divider-x-component class="" />
             </div>
         </div>
 

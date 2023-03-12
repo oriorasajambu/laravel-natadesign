@@ -18,7 +18,7 @@
                         </x-common.subtitle-component>
                         <h6 class='font-play-serif font-bold uppercase text-2xl text-primary xs:hidden'>Informasi</h6>
                     </div>
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     <x-common.article-component :articles='$articles->items()' />
                     {{ $articles->links('vendor.pagination.tailwind') }}
                 </div>

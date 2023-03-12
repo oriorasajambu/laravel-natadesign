@@ -19,7 +19,7 @@
                         </x-common.subtitle-component>
                     </div>
                     <form action="" class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
-                        <x-common.divider-x-component />
+                        <x-common.divider-x-component class="" />
                         <x-common.divider-x-component class="lg:block hidden" />
 
                         <x-common.input-component class="" id="1" label="Nama Lengkap"

@@ -17,7 +17,7 @@
                             Portofolio
                         </x-common.subtitle-component>
                     </div>
-                    <x-common.divider-x-component />
+                    <x-common.divider-x-component class="" />
                     <x-common.project-component :albums='$albums->items()' />
                     {{ $albums->links('vendor.pagination.tailwind') }}
                 </div>
