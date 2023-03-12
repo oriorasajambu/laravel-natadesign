@@ -1,0 +1,1 @@
+<span class="text-partial font-dm-sans font-bold text-xs">{{ $date }}</span>

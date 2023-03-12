@@ -1,0 +1,61 @@
+@tailwind base;
+
+body {
+    overflow-y: overlay;
+    overflow-x: overlay;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #10403C #10403C;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #10403C;
+    border-radius: 3px;
+    border: 3px solid #10403C;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.fade-anim {
+    animation: fadeAnim 0.5s ease-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@keyframes fadeAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
