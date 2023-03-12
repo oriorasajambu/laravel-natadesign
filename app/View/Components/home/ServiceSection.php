@@ -2,18 +2,17 @@
 
 namespace App\View\Components\home;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\Component;
 
 class ServiceSection extends Component
 {
-    public Collection $services;
+    public $services;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(Collection $availableService)
+    public function __construct($availableService)
     {
         $this->services = $availableService;
     }
