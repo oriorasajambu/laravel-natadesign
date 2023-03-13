@@ -28,7 +28,7 @@
 
     <x-home.workflows-section :workflows="$workflows" />
 
-    <x-common.project-section class="" classTitle="text-primary text-center leading-none" :showButton=true>
+    <x-common.project-section class="" classTitle="text-primary text-center leading-none" :showButton="false">
         <x-common.project-component :albums="$albums" />
     </x-common.project-section>
 
@@ -47,7 +47,7 @@
 
     <x-home.faq-section :faqs="$faqs" />
 
-    <x-common.project-section class="" classTitle="text-primary text-start leading-none" :showButton=true>
+    <x-common.project-section class="" classTitle="text-primary text-start leading-none" :showButton="true">
         <x-common.project-component :albums="$albums" />
     </x-common.project-section>
 

@@ -8,7 +8,7 @@ class ProjectSection extends Component
 {
     public string $class;
     public string $classTitle;
-    public bool $showButton;
+    public string $showButton;
     /**
      * Create a new component instance.
      *
@@ -17,7 +17,7 @@ class ProjectSection extends Component
     public function __construct(
         string $class = "",
         string $classTitle = "",
-        bool $showButton = false,
+        string $showButton = "false",
     )
     {
         $this->class = $class;
