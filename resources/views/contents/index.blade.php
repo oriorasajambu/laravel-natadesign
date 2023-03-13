@@ -46,7 +46,7 @@
         @foreach ($testimonies as $testimony)
             <li class="splide__slide">
                 <blockquote
-                    class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
+                    class="xs:h-28 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center break-all">
                     &quot;{{ $testimony->content }}&quot;
                 </blockquote>
                 <p
