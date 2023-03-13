@@ -38,7 +38,7 @@
                         </div>
                         <div class="lg:basis-2/3 md:basis-2/3 md:pl-12 lg:mt-0 md:mt-0 mt-10">
                             <p class="font-dm-sans lg:text-2xl md:text-2xl text-partial">
-                                {{ $about->content_2 }}
+                                {!! $about->content_2 !!}
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="lg:basis-2/3 md:basis-2/3 md:pl-12 lg:mt-0 md:mt-0 mt-10">
                             <p class="font-dm-sans lg:text-2xl md:text-2xl text-partial">
-                                {{ $about->content_3 }}
+                                {!! $about->content_3 !!}
                             </p>
                         </div>
                     </div>
