@@ -8,7 +8,6 @@ class ProjectSection extends Component
 {
     public string $class;
     public string $classTitle;
-    public bool $showButton;
     /**
      * Create a new component instance.
      *
@@ -17,12 +16,10 @@ class ProjectSection extends Component
     public function __construct(
         string $class = "",
         string $classTitle = "",
-        bool $showButton = false,
     )
     {
         $this->class = $class;
         $this->classTitle = $classTitle;
-        $this->showButton = $showButton;
     }
 
     /**

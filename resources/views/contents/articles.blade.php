@@ -1,8 +1,8 @@
-@extends('layout')
-@section('head')
+@extends("layout")
+@section("head")
     <x-custom-head-component :seo="$seo" />
 @endsection
-@section('content')
+@section("content")
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
@@ -16,17 +16,21 @@
                         <x-common.subtitle-component class="uppercase text-primary">
                             Artikel
                         </x-common.subtitle-component>
-                        <h6 class='font-play-serif font-bold uppercase text-2xl text-primary xs:hidden'>Informasi</h6>
+                        <h6 class="font-play-serif font-bold uppercase text-2xl text-primary xs:hidden">Informasi</h6>
                     </div>
                     <x-common.divider-x-component class="" />
-                    <x-common.article-component :articles='$articles->items()' />
-                    {{ $articles->links('vendor.pagination.tailwind') }}
+                    <x-common.article-component :articles="$articles->items()" />
+                    {{ $articles->links("vendor.pagination.tailwind") }}
                 </div>
             </div>
         </div>
 
         <x-common.project-section class="" classTitle="text-primary text-start leading-none" :showButton=true>
-            <x-common.project-component :albums='$albums' />
+            <x-common.project-component :albums="$albums" />
+            <a aria-label="See Our Portofolio" href="/portofolio"
+                class="border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">
+                Selengkapnya
+            </a>
         </x-common.project-section>
 
         <x-common.article-section class="" classTitle="text-primary" title="Ulasan Media" pathName="media">
@@ -38,7 +42,7 @@
         <x-common.footer-section />
     </div>
 @endsection
-@section('scripts')
+@section("scripts")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
