@@ -2,7 +2,7 @@
     <div
         class="flex lg:flex-row md:flex-row sm:flex-row flex-row-reverse lg:flex-nowrap md:flex-nowrap sm:flex-nowrap flex-wrap items-center justify-center lg:justify-between">
         <p
-            class="text-white opacity-50 font-dm-serif lg:text-base md:text-sm sm:text-sm italic lg:text-center md:text-left sm:text-left xs:text-center">
+            class="text-white opacity-50 font-dm-sans lg:text-base md:text-sm sm:text-sm italic lg:text-center md:text-left sm:text-left xs:text-center">
             We are
             Architects and
             Interior Design
