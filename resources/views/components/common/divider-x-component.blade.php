@@ -1,1 +1,1 @@
-<hr class="divider-component w-0 h-0.5 p-0 m-0 bg-primary {{ $class }}" />
+<hr class="divider-x-component h-0.5 p-0 m-0 bg-primary w-0 {{ $class }}" />
