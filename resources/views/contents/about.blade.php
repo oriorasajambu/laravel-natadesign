@@ -69,7 +69,7 @@
                                         class="font-dm-sans font-bold text-partial self-start lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
                                         {{ $employee->job_desk }}</p>
                                 </div>
-                                @if ($key % 2 == 0)
+                                @if ($key % 2 != 0)
                                     <x-common.divider-x-component class="col-span-2 xs:col-span-1" />
                                 @else
                                     <x-common.divider-x-component class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
