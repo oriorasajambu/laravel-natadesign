@@ -6,7 +6,7 @@
             </x-common.subtitle-component>
             {{ $slot }}
             <a aria-label="See Our Portofolio" href="/portofolio"
-                class="{{ $showButton == "false" ? "hidden" : "" }} border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">
+                class="{{ $showButton ? "" : "hidden" }} border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">
                 Selengkapnya
             </a>
         </div>
