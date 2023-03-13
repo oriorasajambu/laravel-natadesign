@@ -20,7 +20,7 @@
                         </svg>
                     </div>
                     <div class="flex-row justify-between text-partial text-base font-dm-sans mb-6">
-                        <p>{{ $album->title }}</p>
+                        <p>{{ $album->alt }}</p>
                     </div>
                     <img src="https://admin.natadesign.id/{{ $album->image }}" class="basis-[19%] relative w-full grow aspect-square self-center" alt="{{ $album->title }}" />
                 </div>
