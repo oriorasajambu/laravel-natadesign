@@ -42,7 +42,20 @@
         <x-common.client-component :clients="$clients" />
     </x-home.client-section>
 
-    <x-home.testimony-section />
+    <x-home.testimony-section>
+        @foreach ($testimonies as $testimony)
+            <li class="splide__slide">
+                <blockquote
+                    class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
+                    &quot;{{ $testimony->title }}&quot;
+                </blockquote>
+                <p
+                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
+                    - {{ $testimony->content }} -
+                </p>
+            </li>
+        @endforeach
+    </x-home.testimony-section>
 
     <x-common.motto-section class="bg-[#F2EEE6] pt-20" headline="{{ $motto->headline }}" title="{{ $motto->title }}"
         content="{{ $motto->content }}" />
