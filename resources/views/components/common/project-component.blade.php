@@ -22,9 +22,7 @@
                     <div class="flex-row justify-between text-partial text-base font-dm-sans mb-6">
                         <p>{{ $album->title }}</p>
                     </div>
-                    <div class="basis-[19%] relative w-full grow aspect-square self-center">
-                        <img src="https://admin.natadesign.id/{{ $album->image }}" alt="{{ $album->title }}" />
-                    </div>
+                    <img src="https://admin.natadesign.id/{{ $album->image }}" class="basis-[19%] relative w-full grow aspect-square self-center" alt="{{ $album->title }}" />
                 </div>
             </a>
         @endforeach
