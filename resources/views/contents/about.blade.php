@@ -59,29 +59,20 @@
                         <div
                             class="grid grid-cols-2 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
                             @foreach ($employees as $key => $employee)
+                                <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
+                                    <img src="https://admin.natadesign.id/{{ $employee->image }}" width={391} height={336}
+                                        alt="{{ $employee->alt }}" />
+                                    <h4
+                                        class="font-dm-sans font-bold text-primary uppercase self-start lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl">
+                                        {{ $employee->name }}</h4>
+                                    <p
+                                        class="font-dm-sans font-bold text-partial self-start lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
+                                        {{ $employee->job_desk }}</p>
+                                </div>
                                 @if ($key % 2 == 0)
-                                    <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
-                                        <img src=" + item.image" width={391} height={336} alt={item.alt} />
-                                        <h4
-                                            class="font-dm-sans font-bold text-primary uppercase self-start lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl">
-                                            {item.name}</h4>
-                                        <p
-                                            class="font-dm-sans font-bold text-partial self-start lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
-                                            {item.job_desk}</p>
-                                    </div>
                                     <x-common.divider-x-component class="col-span-2 xs:col-span-1" />
                                 @else
-                                    <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
-                                        <img src=" + item.image" width={391} height={336} alt={item.alt} />
-                                        <h4
-                                            class="font-dm-sans font-bold text-primary uppercase self-start lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl">
-                                            {item.name}</h4>
-                                        <p
-                                            class="font-dm-sans font-bold text-partial self-start lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
-                                            {item.job_desk}</p>
-                                    </div>
-                                    <x-common.divider-x-component
-                                        class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
+                                    <x-common.divider-x-component class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
                                 @endif
                             @endforeach
                         </div>
