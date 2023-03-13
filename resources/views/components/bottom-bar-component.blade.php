@@ -13,25 +13,25 @@
                 <li>
                     <a href="https://www.instagram.com/nat.adesign" rel="external" aria-label="Instagram" target="_blank"
                         tabIndex={6} class="block py-2 pl-3 pr-4 text-white font-dm-serif">
-                        <FontAwesomeIcon icon={faInstagram} />
+                        <i class="fa-brands fa-facebook-f fa-lg"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/nataproduct" rel="external" aria-label="Facebook" target="_blank"
                         tabIndex={7} class="block py-2 pl-3 pr-4 text-white font-dm-serif">
-                        <FontAwesomeIcon icon={faFacebookF} />
+                        <i class="fa-brands fa-instagram fa-lg"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.tiktok.com/@nat.adesign" rel="external" aria-label="Tiktok" target="_blank"
                         tabIndex={8} class="block py-2 pl-3 pr-4 text-white font-dm-serif">
-                        <FontAwesomeIcon icon={faTiktok} />
+                        <i class="fa-brands fa-tiktok fa-lg"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://wa.me/6281212301500" rel="external" aria-label="Whatsapp" target="_blank"
                         tabIndex={9} class="block py-2 pl-3 pr-4 text-white font-dm-serif">
-                        <FontAwesomeIcon icon={faWhatsapp} />
+                        <i class="fa-brands fa-whatsapp fa-lg"></i>
                     </a>
                 </li>
             </ul>
