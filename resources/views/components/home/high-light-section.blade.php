@@ -1,7 +1,7 @@
 <div class="bg-[#F2EEE6] py-20 flex flex-row justify-center">
     <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
         <div class="grid grid-cols-1 w-full">
-            <div class="flex flex-col">
+            <div class="page-section flex flex-col opacity-0">
                 <div class="w-full grow self-center relative aspect-section">
                     <img class="aspect-section w-full" src="{{ asset('assets/highlight.png')}}" alt="Highligt Image" />
                     <blockquote class="absolute z-10 lg:bottom-12 md:bottom-12 bottom-6 w-full lg:px-12 px-6 flex justify-center lg:justify-start md:justify-start">

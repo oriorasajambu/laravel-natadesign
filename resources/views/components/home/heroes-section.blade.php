@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-b from-transparent to-primary opacity-[.99]">
+<div class="page-section bg-gradient-to-b from-transparent to-primary opacity-0">
     <div class="w-full flex flex-row justify-center h-screen">
         <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
             <x-top-bar-component class="bg-transparent" />

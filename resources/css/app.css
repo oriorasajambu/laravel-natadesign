@@ -65,8 +65,16 @@ body {
     transition: 2s;
 }
 
+.fade-in {
+    opacity: 1;
+    transition: 2s;
+}
+
 @media(prefers-reduced-motion) {
     .expand {
+        transition: none;
+    }
+    .fade-in {
         transition: none;
     }
 }

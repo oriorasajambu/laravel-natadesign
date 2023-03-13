@@ -2,7 +2,6 @@ import './bootstrap';
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('expand');
         }
@@ -10,6 +9,16 @@ const observer = new IntersectionObserver((entries) => {
 });
 const divider = document.querySelectorAll('.divider-x-component');
 divider.forEach((e) => observer.observe(e));
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+});
+const section = document.querySelectorAll('.page-section');
+section.forEach((e) => observer2.observe(e));
 
 function dragToScroll1() {
     const slider = document.querySelector(".items");
