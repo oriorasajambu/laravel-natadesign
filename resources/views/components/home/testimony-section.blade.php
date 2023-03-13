@@ -7,15 +7,42 @@
                 <p class="text-partial font-dm-sans text-center text-2xl mb-12">Apa kata
                     mereka?
                 </p>
-                <div class="grow">
-                    <blockquote
-                        class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
-                        &quot;Test&quot;
-                    </blockquote>
-                    <p
-                        class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
-                        - Test -</p>
-                </div>
+                <section class="splide grow" data-splide='{"type":"loop","perPage":1,"autoplay": true, "pagination": false, "arrows": false}' aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <blockquote
+                                    class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
+                                    &quot;Test&quot;
+                                </blockquote>
+                                <p
+                                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
+                                    - Test -
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <blockquote
+                                    class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
+                                    &quot;Test&quot;
+                                </blockquote>
+                                <p
+                                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
+                                    - Test -
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <blockquote
+                                    class="xs:h-28 lg:mx-24 md:mx-12 mx-0 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
+                                    &quot;Test&quot;
+                                </blockquote>
+                                <p
+                                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
+                                    - Test -
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
             <button aria-label="Previous Testimony"
                 class="hidden lg:block md:block absolute top-1/2 -translate-y-1/2 left-0 hover:scale-110">

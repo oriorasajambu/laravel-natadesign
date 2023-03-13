@@ -22,6 +22,7 @@ section.forEach((e) => observer2.observe(e));
 
 function dragToScroll1() {
     const slider = document.querySelector(".items");
+    if (slider === null) return;
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -48,6 +49,7 @@ function dragToScroll1() {
 
 function dragToScroll2() {
     const slider = document.querySelector(".items2");
+    if (slider === null) return;
     let isDown = false;
     let startX;
     let scrollLeft;

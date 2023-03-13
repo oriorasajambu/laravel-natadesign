@@ -1,5 +1,7 @@
 @extends('layout')
 @section('head')
+    <link rel="stylesheet" href="{{ asset('js/dist/css/splide.min.css') }}" />
+    <script src="{{ asset('js/dist/js/splide.min.js') }}"></script>
     <x-custom-head-component :seo="$seo" />
 @endsection
 @section('content')
@@ -64,4 +66,10 @@
     <x-common.footer-section />
 @endsection
 @section('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var splide = new Splide('.splide');
+            splide.mount();
+        });
+    </script>
 @endsection
