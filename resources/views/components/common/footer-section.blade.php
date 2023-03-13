@@ -11,8 +11,8 @@
                 </div>
             </div>
             <p class="text-white font-dm-sans text-base leading-6 text-end">Design by Oijii Studio <br /> Nat.a
-                Design ©
-                2023</p>
+                Design © {{ date('Y') }}
+            </p>
         </div>
     </div>
 </div>
