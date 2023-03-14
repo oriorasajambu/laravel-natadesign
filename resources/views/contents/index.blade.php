@@ -1,7 +1,7 @@
 @extends('layout')
 @section('head')
-    <link rel="stylesheet" href="{{ asset('js/dist/css/splide.min.css') }}" />
-    <script src="{{ asset('js/dist/js/splide.min.js') }}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <x-custom-head-component :seo="$seo" />
 @endsection
 @section('content')
@@ -44,16 +44,16 @@
 
     <x-home.testimony-section>
         @foreach ($testimonies as $testimony)
-            <li class="splide__slide">
+            <div class="swiper-slide">
                 <blockquote
-                    class="xs:h-28 italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center break-all">
+                    class="italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
                     &quot;{{ $testimony->content }}&quot;
                 </blockquote>
                 <p
-                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6">
+                    class="font-dm-sans font-bold text-partial text-center lg:text-2xl md:text-xl sm:text-lg xs:text-base lg:mt-6 md:mt-6 sm:mt-6 xs:mt-6">
                     - {{ $testimony->author }} -
                 </p>
-            </li>
+            </div>
         @endforeach
     </x-home.testimony-section>
 
@@ -80,9 +80,10 @@
 @endsection
 @section('scripts')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var splide = new Splide('.splide');
-            splide.mount();
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
         });
     </script>
 @endsection

@@ -7,13 +7,11 @@
                 <p class="text-partial font-dm-sans text-center text-2xl mb-12">Apa kata
                     mereka?
                 </p>
-                <section class="splide grow  overflow-x-hidden" data-splide='{"type":"loop","perPage":1,"autoplay": true, "pagination": false, "arrows": false, "gap": 20}' aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            {{ $slot }}
-                        </ul>
+                <div class="swiper lg:w-[900px] md:w-[600px] sm:w-[600px] xs:w-[280px]">
+                    <div class="swiper-wrapper">
+                        {{ $slot }}
                     </div>
-                </section>
+                </div>
             </div>
         </div>
         <x-common.divider-x-component class="" />
