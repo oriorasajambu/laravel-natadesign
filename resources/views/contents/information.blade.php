@@ -1,8 +1,8 @@
-@extends("layout")
-@section("head")
+@extends('layout')
+@section('head')
     <x-custom-head-component :seo="$seo" />
 @endsection
-@section("content")
+@section('content')
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
@@ -18,8 +18,8 @@
                             Estimasi Harga
                         </x-common.subtitle-component>
                     </div>
-                    <form action="{{ route('inquiry.price') }}" method="POST" class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
-                        @csrf
+                    <form id="formInquiryPrice" method="POST"
+                        class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
                         <x-common.divider-x-component class="" />
                         <x-common.divider-x-component class="lg:block hidden" />
 
@@ -114,5 +114,37 @@
         <x-common.footer-section />
     </div>
 @endsection
-@section("scripts")
+@section('scripts')
+    <script>
+        $(document).ready(function() {
+            const formId = "#formInquiryPrice";
+            $(formId).submit(function(event) {
+                let formData = {
+                    name: $(formId).find("input[name=name]").val(),
+                    phone: $(formId).find("input[name=phone]").val(),
+                    email: $(formId).find("input[name=email]").val(),
+                    type: $(formId).find("input[name=type]").val(),
+                    size: $(formId).find("input[name=size]").val(),
+                    location: $(formId).find("input[name=location]").val(),
+                    job: $(formId).find("input[name=job]").val(),
+                    time: $(formId).find("input[name=time]").val(),
+                    info: $(formId).find("textarea[name=info]").val(),
+                }
+
+                $.ajax({
+                    method: 'POST',
+                    url: "{{ route('inquiry.price') }}",
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: formData,
+                    success: function(data) {
+                        console.log(data.success);
+                    }
+                });
+
+                event.preventDefault();
+            });
+        })
+    </script>
 @endsection
