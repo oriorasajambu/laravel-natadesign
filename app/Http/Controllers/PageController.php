@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\Album;
 use App\Models\AvailableService;
+use App\Models\BottomImages;
 use App\Models\Category;
 use App\Models\Client;
 use App\Models\Contact;
@@ -14,6 +15,7 @@ use App\Models\Motto;
 use App\Models\Post;
 use App\Models\SeoCategory;
 use App\Models\Testimony;
+use App\Models\TopImages;
 use App\Models\Workflows;
 
 class PageController extends Controller
@@ -132,8 +134,12 @@ class PageController extends Controller
         $services = AvailableService::all();
         $employees = Employee::all();
         $aboutUs = AboutUs::first();
+        $topImages = TopImages::all();
+        $bottomImages = BottomImages::all();
         $data = [
             'seo' => $seoCategory->seo,
+            'topImages' => $topImages,
+            'bottomImages' => $bottomImages,
             'services' => $services,
             'motto' => $motto,
             'albums' => $albums,

@@ -13,18 +13,13 @@
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div
                     class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
-                    <div class="lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                    </div>
+                    @foreach ($topImages as $key => $topImage)
+                        <div
+                            class="{{ $key != 1 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
+                            <img src="https://admin.natadesign.id/{{ $topImage->image }}" alt="{{ $topImage->alt }}"
+                                class="select-none" />
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -72,7 +67,8 @@
                                 @if ($key % 2 != 0)
                                     <x-common.divider-x-component class="col-span-2 xs:col-span-1" />
                                 @else
-                                    <x-common.divider-x-component class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
+                                    <x-common.divider-x-component
+                                        class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
                                 @endif
                             @endforeach
                         </div>
@@ -105,22 +101,16 @@
             </div>
         </div>
 
-        <div class="w-full flex flex-row justify-center lg:pb-20 pb-10 bg-[#FFFBF2]">
+        <div class="w-full flex flex-row justify-center lg:py-20 py-10 bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
-                <div
-                    class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
-                    <div class="lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" fill alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" fill alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" fill alt="" class="select-none" />
-                    </div>
-                    <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                        <img src="{{ asset('assets/Asset_1.png') }}" fill alt="" class="select-none" />
-                    </div>
+                <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 m-0">
+                    @foreach ($bottomImages as $key => $bottomImage)
+                        <div
+                            class="{{ $key != 1 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
+                            <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" alt="{{ $bottomImage->alt }}"
+                                class="select-none" />
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
