@@ -15,7 +15,7 @@
                     class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
                     @foreach ($topImages as $key => $topImage)
                         <div
-                            class="{{ $key != 1 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
+                            class="{{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
                             <img src="https://admin.natadesign.id/{{ $topImage->image }}" alt="{{ $topImage->alt }}"
                                 class="select-none" />
                         </div>
@@ -106,7 +106,7 @@
                 <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 m-0">
                     @foreach ($bottomImages as $key => $bottomImage)
                         <div
-                            class="{{ $key != 1 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
+                            class="{{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
                             <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" alt="{{ $bottomImage->alt }}"
                                 class="select-none" />
                         </div>
