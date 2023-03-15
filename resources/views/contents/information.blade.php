@@ -24,7 +24,7 @@
                         <x-common.divider-x-component class="lg:block hidden" />
 
                         <x-common.input-component class="" id="1" label="Nama Lengkap"
-                            placeHolder="Nama Lengkap" type="text" name="text" isTextArea="false" />
+                            placeHolder="Nama Lengkap" type="text" name="name" isTextArea="false" />
 
                         <x-common.input-component class="" id="2" label="Nomor HP / WhatsApp"
                             placeHolder="0812 3456 7890" type="text" name="phone" isTextArea="false" />
@@ -51,7 +51,7 @@
 
                         <x-common.input-component class="col-span-2" id="9" label="Informasi Tambahan"
                             placeHolder="Untuk mempercepat proses estimasi harga, mohon berikan rincian deskripsi proyek Anda secara detail dan lengkap. Terima kasih."
-                            type="text" name="additional_info" isTextArea="true" />
+                            type="text" name="info" isTextArea="true" />
 
                         <div class="flex flex-row xs:flex-col justify-between col-span-2 my-6">
                             <button type="submit"

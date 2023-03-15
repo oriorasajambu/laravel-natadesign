@@ -26,15 +26,15 @@ class InquiryFormRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required',
-            // 'phone' => 'required',
-            // 'email' => 'required|email|max:50',
-            // 'type' => 'required',
-            // 'size' => 'required',
-            // 'location' => 'required',
-            // 'job' => 'required',
-            // 'time' => 'required',
-            // 'info' => 'required',
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email|max:50',
+            'type' => 'required',
+            'size' => 'required',
+            'location' => 'required',
+            'job' => 'required',
+            'time' => 'required',
+            'info' => 'required',
         ];
     }
 
