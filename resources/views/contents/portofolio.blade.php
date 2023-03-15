@@ -23,7 +23,7 @@
                         @foreach ($album->photos as $key => $photo)
                             <div
                                 class="{{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square">
-                                <img src="https://admin.natadesign.id/{{ $photo->image }}" alt="{{ $photo->alt }}"
+                                <img src="https://admin.natadesign.id/{{ $photo->original }}" alt="{{ $photo->alt }}"
                                     class="select-none" />
                             </div>
                         @endforeach
