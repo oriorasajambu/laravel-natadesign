@@ -38,7 +38,7 @@ class ContactFormRequest extends FormRequest
             'code'      => 400,
             'success'   => false,
             'message'   => 'Bad Request',
-            'data'      => null,
+            'data'      => $validator->errors(),
         ], 400));
     }
 }
