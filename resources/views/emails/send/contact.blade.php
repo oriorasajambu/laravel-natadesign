@@ -1,12 +1,11 @@
 <x-mail::message>
-# Introduction
+# New Contact Received!
 
-The body of your message.
+<x-mail::panel>
+Nama: {{$name}} <br>
+Email: {{$email}} <br>
+Pertanyaan: {{$question}}
+</x-mail::panel>
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
-
-Thanks,<br>
-{{ config('app.name') }}
+Regards, Nat.A Design
 </x-mail::message>
