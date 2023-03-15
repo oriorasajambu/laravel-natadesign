@@ -30,6 +30,48 @@
         integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous">
     </script>
 
+    <script>
+        $(document).ready(function() {
+            const formIdContact = "#formSendContact";
+            $(formIdContact).submit(function(event) {
+                $("#btnSendContact").prop('disabled', true);
+                $("#default-button-contact").addClass('hidden');
+                $("#loading-button-contact").removeClass('hidden');
+                $("#loading-button-contact").addClass('inline-flex');
+                let formData = {
+                    name: $(formIdContact).find("input[name=name]").val(),
+                    email: $(formIdContact).find("input[name=email]").val(),
+                    question: $(formIdContact).find("input[name=question]").val(),
+                }
+
+                $.ajax({
+                    method: 'POST',
+                    url: "{{ route('send.contact') }}",
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: formData,
+                    success: function(data) {
+                        $("#btnSendContact").removeAttr('disabled');
+                        $("#loading-button-contact").removeClass('inline-flex');
+                        $("#loading-button-contact").addClass('hidden');
+                        $("#default-button-contact").removeClass('hidden');
+                        if (data.code == 200 && data.success) {
+                            //TODO Show Notif Success
+                            $(formIdContact).each(function() {
+                                this.reset();
+                            });
+                        } else {
+                            //TODO Show Notif Failed
+                        }
+                    }
+                });
+
+                event.preventDefault();
+            });
+        })
+    </script>
+
     @yield('scripts')
 </body>
 
