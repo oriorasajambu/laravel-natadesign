@@ -31,8 +31,8 @@ class PageController extends Controller
             ->orderBy('albums.position', 'asc')
             ->take(3)
             ->get();
-        $clients = Client::orderBy('client.position', 'desc')->get();
-        $testimonies = Testimony::all();
+        $clients = Client::orderBy('position', 'desc')->get();
+        $testimonies = Testimony::orderBy('position', 'desc')->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
             ->join('posts', 'categories.id', '=', 'posts.category_id')
             ->join('users', 'users.id', '=', 'posts.user_id')
@@ -74,7 +74,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->paginate(9);
         $contact = Contact::first();
         $data = [
@@ -99,7 +99,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $contact = Contact::first();
@@ -118,7 +118,7 @@ class PageController extends Controller
         $seoCategory = SeoCategory::where('name', 'LIKE', '%about%')->firstOrFail();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
@@ -132,7 +132,7 @@ class PageController extends Controller
         $contact = Contact::first();
         $motto = Motto::first();
         $services = AvailableService::all();
-        $employees = Employee::all();
+        $employees = Employee::orderBy('position', 'DESC')->get();
         $aboutUs = AboutUs::first();
         $topImages = TopImages::all();
         $bottomImages = BottomImages::all();
@@ -171,7 +171,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $contact = Contact::first();
@@ -190,7 +190,7 @@ class PageController extends Controller
         $contact = Contact::first();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
@@ -230,7 +230,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $contact = Contact::first();
@@ -249,7 +249,7 @@ class PageController extends Controller
         $contact = Contact::first();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
@@ -283,7 +283,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $data = [
@@ -309,7 +309,7 @@ class PageController extends Controller
             ->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
         $data = [
