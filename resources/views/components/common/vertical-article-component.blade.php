@@ -2,7 +2,7 @@
     <h2 class="text-5xl text-primary font-dm-sans font-bold">{{ $title }}</h2>
     @foreach ($articles as $key => $article)
         <a aria-label="{{ $article->title }}"
-            href="{{ $title == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
+            href="{{ $article->category == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
             <div class="grid grid-cols-1 mt-12">
                 <div class="w-full h-auto aspect-square relative">
                     <img src={{ $article->thumbnail_url }} alt="{{ $article->title }}" />
