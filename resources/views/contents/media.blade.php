@@ -18,9 +18,7 @@
                                 class="text-primary font-dm-sans font-bold text-4xl lg:text-[48px] md:text-5xl leading-tight">
                                 {{ $article->title }}</h1>
                         </div>
-                        <div class="w-full aspect-square relative mb-12">
-                            <img src={{ $article->thumbnail_url }} alt={{ $article->title }} />
-                        </div>
+                        <img src={{ $article->thumbnail_url }} class="w-full aspect-square relative mb-12" alt={{ $article->title }} />
                         <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh
