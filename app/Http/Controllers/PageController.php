@@ -132,7 +132,7 @@ class PageController extends Controller
         $contact = Contact::first();
         $motto = Motto::first();
         $services = AvailableService::all();
-        $employees = Employee::orderBy('position', 'DESC')->get();
+        $employees = Employee::orderBy('position', 'ASC')->get();
         $aboutUs = AboutUs::first();
         $topImages = TopImages::all();
         $bottomImages = BottomImages::all();
