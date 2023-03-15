@@ -37,7 +37,6 @@ class EmailController extends Controller
 
     public function inquiryForm(InquiryFormRequest $request)
     {
-        dd($request);
         $mail = $request->all();
         try {
             Mail::to($this->target)->send(new InquiryPrice($mail));
