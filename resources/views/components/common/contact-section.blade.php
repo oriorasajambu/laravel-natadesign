@@ -126,6 +126,7 @@
                         </div>
                     </div>
                     <form class="flex-1 grid grid-cols-1 gap-6" action="{{ route('send.contact') }}" method="POST">
+                        @csrf
                         <x-common.input-component class="" id="1" label="Nama Lengkap"
                             placeHolder="Nama Lengkap" type="text" name="name" isTextArea='false' />
                         <x-common.input-component class="" id="2" label="Email"

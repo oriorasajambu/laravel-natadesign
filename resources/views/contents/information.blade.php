@@ -19,6 +19,7 @@
                         </x-common.subtitle-component>
                     </div>
                     <form action="{{ route('inquiry.price') }}" method="POST" class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
+                        @csrf
                         <x-common.divider-x-component class="" />
                         <x-common.divider-x-component class="lg:block hidden" />
 
