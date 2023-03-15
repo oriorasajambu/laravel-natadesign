@@ -41,7 +41,7 @@
                 let formData = {
                     name: $(formIdContact).find("input[name=name]").val(),
                     email: $(formIdContact).find("input[name=email]").val(),
-                    question: $(formIdContact).find("input[name=question]").val(),
+                    question: $(formIdContact).find("textarea[name=question]").val(),
                 }
 
                 $.ajax({
