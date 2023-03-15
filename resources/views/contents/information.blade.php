@@ -18,7 +18,7 @@
                             Estimasi Harga
                         </x-common.subtitle-component>
                     </div>
-                    <form action="" class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
+                    <form action="{{ route('inquiry.price') }}" method="POST" class="lg:grid lg:grid-cols-2 flex flex-col gap-x-20 gap-y-6 pt-10">
                         <x-common.divider-x-component class="" />
                         <x-common.divider-x-component class="lg:block hidden" />
 
@@ -53,7 +53,7 @@
                             type="text" name="additional_info" isTextArea="true" />
 
                         <div class="flex flex-row xs:flex-col justify-between col-span-2 my-6">
-                            <button
+                            <button type="submit"
                                 class="border-2 border-[#707070] text-center py-6 px-10 text-partial font-dm-sans font-bold
                                 lg:text-xl text-base">
                                 Kirim Pesan
