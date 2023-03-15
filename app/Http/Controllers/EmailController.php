@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
 {
-    public $target = "oriorasajambu@gmail.com";
+    public $target = "nat.adesign90@gmail.com";
 
     public function contactForm(ContactFormRequest $request)
     {
