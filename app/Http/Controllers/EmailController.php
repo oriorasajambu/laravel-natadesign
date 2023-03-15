@@ -16,7 +16,6 @@ class EmailController extends Controller
 
     public function contactForm(ContactFormRequest $request)
     {
-        dd($request);
         $mail = $request->all();
         try {
             Mail::to($this->target)->send(new SendContact($mail));
