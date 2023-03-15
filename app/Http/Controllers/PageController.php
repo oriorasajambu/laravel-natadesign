@@ -32,7 +32,7 @@ class PageController extends Controller
             ->take(3)
             ->get();
         $clients = Client::orderBy('position', 'DESC')->get();
-        $testimonies = Testimony::orderBy('position', 'DESC')->get();
+        $testimonies = Testimony::orderBy('position', 'ASC')->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
             ->join('posts', 'categories.id', '=', 'posts.category_id')
             ->join('users', 'users.id', '=', 'posts.user_id')
