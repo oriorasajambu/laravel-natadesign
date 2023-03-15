@@ -356,6 +356,14 @@
                         $("#loading-button").removeClass('inline-flex');
                         $("#loading-button").addClass('hidden');
                         $("#default-button").removeClass('hidden');
+                        if (data.code == 200 && data.success) {
+                            //TODO Show Notif Success
+                            $(formId).each(function() {
+                                this.reset();
+                            });
+                        } else {
+                            //TODO Show Notif Failed
+                        }
                     }
                 });
 
