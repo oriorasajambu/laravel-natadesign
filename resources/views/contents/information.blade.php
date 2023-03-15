@@ -130,7 +130,7 @@
                     time: $(formId).find("input[name=time]").val(),
                     info: $(formId).find("textarea[name=info]").val(),
                 }
-
+                console.log(JSON.stringify(formData));
                 $.ajax({
                     method: 'POST',
                     url: "{{ route('inquiry.price') }}",
