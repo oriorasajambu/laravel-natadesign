@@ -28,11 +28,11 @@ class PageController extends Controller
         $workflows = Workflows::all();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'asc')
+            ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $clients = Client::orderBy('position', 'desc')->get();
-        $testimonies = Testimony::orderBy('position', 'desc')->get();
+        $clients = Client::orderBy('position', 'DESC')->get();
+        $testimonies = Testimony::orderBy('position', 'DESC')->get();
         $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
             ->join('posts', 'categories.id', '=', 'posts.category_id')
             ->join('users', 'users.id', '=', 'posts.user_id')
