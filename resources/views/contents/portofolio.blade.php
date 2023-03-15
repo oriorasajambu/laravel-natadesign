@@ -20,18 +20,13 @@
                     <x-common.divider-x-component class="" />
                     <div
                         class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
-                        <div class="lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                            <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                        </div>
-                        <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                            <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                        </div>
-                        <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                            <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                        </div>
-                        <div class="ml-3 lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
-                            <img src="{{ asset('assets/Asset_1.png') }}" alt="" class="select-none" />
-                        </div>
+                        @foreach ($album->photos as $key => $photo)
+                            <div
+                                class="{{ $key != 1 ? 'ml-3' : '' }}lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative">
+                                <img src="https://admin.natadesign.id/{{ $photo->image }}" alt="{{ $photo->alt }}"
+                                    class="select-none" />
+                            </div>
+                        @endforeach
                     </div>
                     <x-common.divider-x-component class="mt-20" />
                     <div class="flex flex-row xs:flex-col w-full items-stretch gap-[1px] relative">
