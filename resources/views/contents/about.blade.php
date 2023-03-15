@@ -31,10 +31,8 @@
                         <div class="lg:basis-1/3 md:basis-1/3 lg:pr-20 md:pr-0">
                             <h3 class="text-3xl font-dm-sans font-bold text-partial uppercase">{{ $about->title_2 }}</h3>
                         </div>
-                        <div class="lg:basis-2/3 md:basis-2/3 md:pl-12 lg:mt-0 md:mt-0 mt-10">
-                            <p class="font-dm-sans lg:text-2xl md:text-2xl text-partial">
-                                {!! $about->content_2 !!}
-                            </p>
+                        <div class="lg:basis-2/3 md:basis-2/3 md:pl-12 lg:mt-0 md:mt-0 mt-10 font-dm-sans lg:text-2xl md:text-2xl text-partial">
+                            {!! $about->content_2 !!}
                         </div>
                     </div>
                     <x-common.divider-x-component class="" />
