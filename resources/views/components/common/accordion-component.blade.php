@@ -8,7 +8,7 @@
         @endif
         <p class="basis-5/6 text-2xl xs:text-xl font-dm-sans text-partial ">{{ $title }}</p>
     </div>
-    <div class="self-end absolute transition-transform duration-500 rotate-0 peer-checked:rotate-90 lg:pr-12 md:pr-12 sm:pr-12 xs:pr-0">
+    <div class="self-end absolute transition-transform duration-500 rotate-0 peer-checked:rotate-90 lg:mr-12 md:mr-12 sm:mr-12 xs:mr-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="14.12" height="25.414" viewBox="0 0 14.12 25.414">
             <path id="Path_60" data-name="Path 60" d="M0,12,12,0,24,12" transform="translate(12.706 0.707) rotate(90)"
                 fill="none" stroke="#10403c" strokeWidth="2" />
