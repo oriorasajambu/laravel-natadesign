@@ -33,14 +33,7 @@ class PageController extends Controller
             ->get();
         $clients = Client::orderBy('position', 'DESC')->get();
         $testimonies = Testimony::orderBy('position', 'ASC')->get();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', '!=', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->get();
         $motto = Motto::first();
         $faqs = Faq::all();
         $contact = Contact::first();
