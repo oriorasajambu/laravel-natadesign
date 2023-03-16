@@ -3,7 +3,7 @@
         @foreach ($articles as $key => $article)
             @if ($key % 2 == 0)
                 <a aria-label={{ $article->title }}
-                    href="{{ $article->category == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
+                    href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
                         <img src="https://admin.natadesign.id/{{ $article->thumbnail->image }}" class="basis-[19%] w-full grow aspect-square"
@@ -16,7 +16,7 @@
                 </a>
             @else
                 <a aria-label={{ $article->title }}
-                    href="{{ $article->category == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
+                    href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
                         <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
