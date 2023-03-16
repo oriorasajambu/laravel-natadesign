@@ -18,7 +18,8 @@
                                 class="text-primary font-dm-sans font-bold text-4xl lg:text-[48px] md:text-5xl leading-tight">
                                 {{ $article->title }}</h1>
                         </div>
-                        <img src="https://admin.natadesign.id/{{ $article->thumbnail->original }}" class="w-full aspect-square mb-12" alt={{ $article->thumbnail->alt }} />
+                        <img src="https://admin.natadesign.id/{{ $article->thumbnail->original }}"
+                            class="w-full aspect-square mb-12" alt={{ $article->thumbnail->alt }} />
                         <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh
@@ -60,15 +61,18 @@
                     </div>
                     <div class="lg:flex md:flex sm:hidden xs:hidden basis-1/3 lg:pl-12 md:pl-12 pl-0 flex-col bg-[#FFFBF2]">
                         <x-common.vertical-article-component :articles="$articles" title="Ulasan Terbaru" />
-                        <a href='/media' aria-label='See More Media Review' class="font-dm-sans text-partial">Selengkapnya</a>
+                        <a href='/media' aria-label='See More Media Review'
+                            class="font-dm-sans text-partial">Selengkapnya</a>
                         <x-common.vertical-album-component :albums="$albums" />
-                        <a href='/portofolio' aria-label='See More Portofolio' class="font-dm-sans text-partial">Selengkapnya</a>
+                        <a href='/portofolio' aria-label='See More Portofolio'
+                            class="font-dm-sans text-partial">Selengkapnya</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <x-common.project-section class="lg:hidden md:hidden sm:hidden xs:flex" classTitle="text-primary text-start leading-none" :showButton=true>
+        <x-common.project-section class="lg:hidden md:hidden sm:hidden xs:flex"
+            classTitle="text-primary text-start leading-none" :showButton=true>
             <x-common.project-component :albums="$albums" />
             <a aria-label="See Our Portofolio" href="/portofolio"
                 class="border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">
@@ -76,7 +80,8 @@
             </a>
         </x-common.project-section>
 
-        <x-common.article-section class="lg:hidden md:hidden sm:hidden xs:flex" classTitle="text-primary" title="Ulasan Terbaru" pathName="media">
+        <x-common.article-section class="lg:hidden md:hidden sm:hidden xs:flex" classTitle="text-primary"
+            title="Ulasan Terbaru" pathName="media">
             <x-common.article-component :articles="$articles" />
         </x-common.article-section>
 
