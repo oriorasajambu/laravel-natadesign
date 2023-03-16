@@ -5,7 +5,7 @@
             href="{{ $article->category == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
             <div class="grid grid-cols-1 mt-12">
                 <div class="w-full h-auto aspect-square relative">
-                    <img src={{ $article->thumbnail_url }} alt="{{ $article->title }}" />
+                    <img src={{ $article->thumbnail->image }} alt="{{ $article->thumbnail->alt }}" />
                 </div>
                 <h3 class="mt-6 font-dm-sans font-bold text-2xl text-partial">{{ $article->title }}</h3>
                 <p class="font-dm-sans font-bold text-xs my-6 text-partial">Ditulis oleh

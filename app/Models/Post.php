@@ -21,7 +21,7 @@ class Post extends Model
         'user_id',
         'title',
         'slug',
-        'thumbnail_url',
+        'thumbnail_id',
         'content',
         'status',
         'published_at'
@@ -40,6 +40,14 @@ class Post extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get the thumbnail for the blog post.
+     */
+    public function thumbnail()
+    {
+        return $this->belongsTo(Gallery::class, 'thumbnail_id');
     }
 
     /**
@@ -65,5 +73,4 @@ class Post extends Model
     {
         return $this->hasOneThrough(Seo::class, SeoCategory::class);
     }
-
 }
