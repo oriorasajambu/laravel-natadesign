@@ -152,14 +152,7 @@ class PageController extends Controller
             ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
             'albums' => $albums,
@@ -172,13 +165,7 @@ class PageController extends Controller
     public function media()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%articles%')->firstOrFail();
-        $medias = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->paginate(9);
+        $medias = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->paginate(9);
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')

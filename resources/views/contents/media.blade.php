@@ -19,7 +19,7 @@
                                 {{ $article->title }}</h1>
                         </div>
                         <img src="https://admin.natadesign.id/{{ $article->thumbnail->original }}"
-                            class="w-full aspect-square mb-12" alt={{ $article->thumbnail->alt }} />
+                            class="w-full aspect-square mb-12" alt="{{ $article->thumbnail->alt }}" />
                         <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh

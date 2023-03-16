@@ -7,7 +7,7 @@
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
                         <img src="https://admin.natadesign.id/{{ $article->thumbnail->image }}" class="basis-[19%] w-full grow aspect-square"
-                            alt={{ $article->thumbnail->alt }} />
+                            alt="{{ $article->thumbnail->alt }}" />
                         <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
                         <div class="text-secondary font-dm-sans text-base leading-6 line-clamp-3">
                             {!! $article->content !!}
@@ -24,7 +24,7 @@
                             {!! $article->content !!}
                         </div>
                         <img src="https://admin.natadesign.id/{{ $article->thumbnail->image }}" class="basis-[19%] w-full grow aspect-square"
-                            alt={{ $article->thumbnail->alt }} />
+                            alt="{{ $article->thumbnail->alt }}" />
                     </article>
                 </a>
             @endif
