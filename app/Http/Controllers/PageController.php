@@ -57,14 +57,7 @@ class PageController extends Controller
     public function portofolio()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', '!=', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -82,14 +75,7 @@ class PageController extends Controller
     public function portofolioDetail(Album $album)
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', '!=', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -114,14 +100,7 @@ class PageController extends Controller
             ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', '!=', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $contact = Contact::first();
         $motto = Motto::first();
         $services = AvailableService::all();
@@ -213,14 +192,7 @@ class PageController extends Controller
             ->where('categories.slug', 'ulasan-media')
             ->orderBy('posts.published_at', 'DESC')
             ->paginate(9);
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', "!=", 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -245,14 +217,7 @@ class PageController extends Controller
             ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', '!=', 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
             'albums' => $albums,
@@ -266,14 +231,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%contact%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', "!=", 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -292,14 +250,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%information%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Category::select('posts.*', 'users.name as author', 'categories.name as category')
-            ->join('posts', 'categories.id', '=', 'posts.category_id')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->whereNotNull('posts.published_at')
-            ->where('categories.slug', "!=", 'ulasan-media')
-            ->orderBy('posts.published_at', 'DESC')
-            ->take(3)
-            ->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
