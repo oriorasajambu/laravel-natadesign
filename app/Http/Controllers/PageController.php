@@ -33,7 +33,7 @@ class PageController extends Controller
             ->get();
         $clients = Client::orderBy('position', 'DESC')->get();
         $testimonies = Testimony::orderBy('position', 'ASC')->get();
-        $articles = Post::orderBy('published_at', 'ASC')->get();
+        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
         $motto = Motto::first();
         $faqs = Faq::all();
         $contact = Contact::first();
