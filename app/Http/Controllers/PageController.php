@@ -33,7 +33,7 @@ class PageController extends Controller
             ->get();
         $clients = Client::orderBy('position', 'DESC')->get();
         $testimonies = Testimony::orderBy('position', 'ASC')->get();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $motto = Motto::first();
         $faqs = Faq::all();
         $contact = Contact::first();
@@ -57,7 +57,7 @@ class PageController extends Controller
     public function portofolio()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -75,7 +75,7 @@ class PageController extends Controller
     public function portofolioDetail(Album $album)
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -100,7 +100,7 @@ class PageController extends Controller
             ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $contact = Contact::first();
         $motto = Motto::first();
         $services = AvailableService::all();
@@ -192,7 +192,7 @@ class PageController extends Controller
             ->where('categories.slug', 'ulasan-media')
             ->orderBy('posts.published_at', 'DESC')
             ->paginate(9);
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -217,7 +217,7 @@ class PageController extends Controller
             ->orderBy('albums.position', 'DESC')
             ->take(3)
             ->get();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
             'albums' => $albums,
@@ -231,7 +231,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%contact%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
@@ -250,7 +250,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%information%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Post::orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::select('albums.*', 'image', 'original', 'alt')
             ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
             ->orderBy('albums.position', 'DESC')
