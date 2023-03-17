@@ -14,9 +14,9 @@
                     <x-common.date-component date="{{ $article->published_at }}"
                         class="text-partial font-dm-sans font-bold text-xs" />
                 </p>
-                <p class="text-secondary font-dm-sans text-base leading-6 line-clamp-3">
+                <div class="text-secondary font-dm-sans text-base leading-6 line-clamp-3">
                     {!! $article->content !!}
-                </p>
+                </div>
             </div>
         </a>
     @endforeach
