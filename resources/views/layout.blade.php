@@ -10,7 +10,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     @yield('head')
-    <meta name="theme-color" content="#10403C"/>
+    <meta name="theme-color" content="#10403C" />
 </head>
 
 <body class="overflow-x-hidden bg-partial scroll-smooth">
@@ -22,6 +22,12 @@
     <script src="{{ asset('js/jquery/script.js') }}" defer></script>
 
     @yield('scripts')
+
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register("{{ asset('sw.js') }}");
+        }
+    </script>
 </body>
 
 </html>
