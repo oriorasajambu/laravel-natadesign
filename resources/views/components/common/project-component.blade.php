@@ -20,9 +20,11 @@
                         </svg>
                     </div>
                     <div class="flex-row justify-between text-partial text-base font-dm-sans mb-6">
-                        <p>{{ isset($album->cover->alt) ? $album->cover->alt : '' }}</p>
+                        <p>{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}</p>
                     </div>
-                    <img src="https://admin.natadesign.id/{{ isset($album->cover->image) ? $album->cover->image : '' }}" class="basis-[19%] relative w-full grow aspect-square self-center" alt="{{ $album->title }}" />
+                    <img src="{{ isset($album->cover->image) ? 'https://admin.natadesign.id/' . $album->cover->image : asset('assets/favicon.svg') }}"
+                        class="basis-[19%] relative w-full grow aspect-square self-center"
+                        alt="{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}" />
                 </div>
             </a>
         @endforeach

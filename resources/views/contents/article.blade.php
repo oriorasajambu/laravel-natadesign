@@ -18,8 +18,8 @@
                                 class="text-primary font-dm-sans font-bold text-4xl lg:text-[48px] md:text-5xl leading-tight">
                                 {{ $article->title }}</h1>
                         </div>
-                        <img src="https://admin.natadesign.id/{{ $article->thumbnail->original }}"
-                            class="w-full aspect-square mb-12" alt="{{ $article->thumbnail->alt }}" />
+                        <img src="{{ isset($article->thumbnail->original) ? 'https://admin.natadesign.id/' . $article->thumbnail->original : asset('assets/favicon.svg') }}"
+                            class="w-full aspect-square mb-12" alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
                         <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh
