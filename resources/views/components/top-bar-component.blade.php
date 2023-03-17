@@ -9,15 +9,15 @@
                 </li>
                 <li>
                     <a class="block py-2 pl-3 pr-3 text-white lg:text-lg md:text-sm font-dm-sans border-b-2 border-transparent md:bg-transparent md:p-0 hover:border-white"
-                        href="/portofolio" aria-label='Portofolio' tabIndex=2>Portofolio</a>
+                        href="/portofolio" aria-label='Portofolio' tabIndex=0>Portofolio</a>
                 </li>
                 <li>
                     <a class="block py-2 pl-3 pr-3 text-white lg:text-lg md:text-sm font-dm-sans border-b-2 border-transparent md:bg-transparent md:p-0 hover:border-white"
-                        href="/about" aria-label='About Us' tabIndex=3>Tentang</a>
+                        href="/about" aria-label='About Us' tabIndex=0>Tentang</a>
                 </li>
                 <li>
                     <div class="dropdown inline-block relative">
-                        <button tabIndex=4
+                        <button tabIndex=0
                             class="block py-2 pl-3 pr-3 text-white lg:text-lg md:text-sm font-dm-sans border-b-2 border-transparent md:bg-transparent md:p-0 hover:border-white">
                             <span class="mr-1">Informasi</span>
                         </button>
@@ -45,7 +45,7 @@
                 </li>
                 <li>
                     <a class="block py-2 pl-3 pr-3 text-white lg:text-lg md:text-sm font-dm-sans border-b-2 border-transparent md:bg-transparent md:p-0 hover:border-white"
-                        href="/contact" aria-label='Contact' tabIndex=5>Kontak</a>
+                        href="/contact" aria-label='Contact' tabIndex=0>Kontak</a>
                 </li>
             </ul>
         </div>
