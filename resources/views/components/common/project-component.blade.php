@@ -20,9 +20,9 @@
                         </svg>
                     </div>
                     <div class="flex-row justify-between text-partial text-base font-dm-sans mb-6">
-                        <p>{{ $album->alt }}</p>
+                        <p>{{ isset($album->cover->alt) ? $album->cover->alt : '' }}</p>
                     </div>
-                    <img src="https://admin.natadesign.id/{{ $album->image }}" class="basis-[19%] relative w-full grow aspect-square self-center" alt="{{ $album->title }}" />
+                    <img src="https://admin.natadesign.id/{{ isset($album->cover->image) ? $album->cover->image : '' }}" class="basis-[19%] relative w-full grow aspect-square self-center" alt="{{ $album->title }}" />
                 </div>
             </a>
         @endforeach
