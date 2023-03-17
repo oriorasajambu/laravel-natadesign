@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 w-full">
             <div class="page-section flex flex-col opacity-0">
                 <div class="w-full grow self-center relative aspect-section">
-                    <img class="aspect-section w-full" src="{{ asset('assets/highlight.png')}}" alt="Highligt Image" />
+                    <img class="aspect-section w-full" src="{{ asset('assets/highlight.jpg')}}" alt="Highligt Image" />
                     <blockquote class="absolute z-10 lg:bottom-12 md:bottom-12 bottom-6 w-full lg:px-12 px-6 flex justify-center lg:justify-start md:justify-start">
                         <p class="text-start text-white font-dm-sans lg:text-base md:text-sm text-xs w-48">&quot;Anda harus dengan sepenuh hati melakukan apa saja untuk mencapai apa pun yang berharga.&quot;</p>
                     </blockquote>
