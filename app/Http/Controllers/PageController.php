@@ -6,7 +6,6 @@ use App\Models\AboutUs;
 use App\Models\Album;
 use App\Models\AvailableService;
 use App\Models\BottomImages;
-use App\Models\Category;
 use App\Models\Client;
 use App\Models\Contact;
 use App\Models\Employee;
@@ -26,11 +25,7 @@ class PageController extends Controller
         $aboutUs = AboutUs::first();
         $availableService = AvailableService::all();
         $workflows = Workflows::all();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();
         $clients = Client::orderBy('position', 'DESC')->get();
         $testimonies = Testimony::orderBy('position', 'ASC')->get();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
@@ -76,11 +71,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
             'seo' => $seoCategory->seo,
@@ -95,11 +86,7 @@ class PageController extends Controller
     public function about()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%about%')->firstOrFail();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $contact = Contact::first();
         $motto = Motto::first();
@@ -128,11 +115,7 @@ class PageController extends Controller
         $seoCategory = SeoCategory::where('name', 'LIKE', '%articles%')->firstOrFail();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->paginate(9);
         $medias = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
             'seo' => $seoCategory->seo,
@@ -147,11 +130,7 @@ class PageController extends Controller
     public function articleDetail(Post $post)
     {
         $contact = Contact::first();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $articles = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
@@ -167,11 +146,7 @@ class PageController extends Controller
         $seoCategory = SeoCategory::where('name', 'LIKE', '%articles%')->firstOrFail();
         $medias = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->paginate(9);
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
             'seo' => $seoCategory->seo,
@@ -186,11 +161,7 @@ class PageController extends Controller
     public function mediaDetail(Post $post)
     {
         $contact = Contact::first();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
@@ -206,11 +177,7 @@ class PageController extends Controller
         $seoCategory = SeoCategory::where('name', 'LIKE', '%contact%')->firstOrFail();
         $contact = Contact::first();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $data = [
             'seo' => $seoCategory->seo,
             'albums' => $albums,
@@ -225,11 +192,7 @@ class PageController extends Controller
         $seoCategory = SeoCategory::where('name', 'LIKE', '%information%')->firstOrFail();
         $contact = Contact::first();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->take(3)
-            ->get();
+        $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $data = [
             'seo' => $seoCategory->seo,
             'albums' => $albums,
