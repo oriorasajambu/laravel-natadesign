@@ -1,7 +1,7 @@
 @extends('layout')
 @section('head')
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="{{ asset('js/swiper-js/swiper-bundle.min.css') }}">
+    <script src="{{ asset('js/swiper-js/swiper-bundle.min.js') }}" defer></script>
     <x-custom-head-component :seo="$seo" />
 @endsection
 @section('content')
