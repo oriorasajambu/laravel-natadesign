@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex flex-wrap lg:flex-nowrap items-center justify-between mt-6">
                     <div class="hidden mr-auto lg:block md:block sm:block md:w-auto" id="navbar-default">
-                        <ul
+                        <div
                             class="flex flex-col pl-0 lg:flex-row md:flex-row sm:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                             <p class="block py-2 pr-4 text-[#404040] text-lg font-dm-sans md:bg-transparent md:p-0">
                                 Desain Cafe
@@ -21,7 +21,7 @@
                             <p class="block py-2 pl-3 pr-4 text-[#404040] text-lg font-dm-sans md:bg-transparent md:p-0">
                                 Desain Restoran
                             </p>
-                        </ul>
+                        </div>
                     </div>
                     <a aria-label="See Our Gallery" href="/portofolio" class="flex items-center text-[#404040] font-dm-sans font-bold">
                         Lihat Gallery Kami
