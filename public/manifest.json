@@ -1,6 +1,7 @@
 {
     "short_name": "Nat.A Design",
     "name": "Nat.A Design Website",
+    "orientation": "portrait-primary",
     "icons": [
         {
             "src": "/favicon-512.svg",
@@ -17,6 +18,52 @@
             "sizes": "196x196",
             "type": "image/png",
             "purpose": "maskable"
+        },
+        {
+            "src": "/favicon-196.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Portofolio",
+            "url": "/portofolio",
+            "description": "List of new portofolio"
+        },
+        {
+            "name": "Postingan",
+            "url": "/articles",
+            "description": "List of new articles"
+        },
+        {
+            "name": "Ulasan Media",
+            "url": "/media",
+            "description": "List of new media reviews"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshots/home.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "platform": "wide",
+            "label": "Homescreen of Nat.A Design App"
+        },
+        {
+            "src": "/screenshots/portofolio.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "platform": "wide",
+            "label": "List of Awesome Pictures available in Nat.A Design App"
+        },
+        {
+            "src": "/screenshots/new-project.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "platform": "wide",
+            "label": "List of Awesome Project available in Nat.A Design App"
         }
     ],
     "id": "/",
@@ -25,6 +72,6 @@
     "display": "standalone",
     "scope": "/",
     "theme_color": "#10403C",
-    "description": "Website For Nat.A Design",
+    "description": "Nat.A Design menyediakan desain furnitur spesialist, desain restoran, desain kafe maupun arsitektur restoran dan juga menyediakan pilihan paket yang terjangkau.",
     "prefer_related_applications": false
 }
