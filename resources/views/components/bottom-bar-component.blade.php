@@ -52,12 +52,12 @@
             <ul
                 class="flex flex-row lg:justify-center md:justify-end sm:justify-end gap-8 md:text-sm sm:text-sm md:font-medium md:border-0 content-end">
                 <li>
-                    <a href="https://www.instagram.com/nat.adesign" rel="external" aria-label="Instagram"
-                        target="_blank" class="block text-white font-dm-sans md:bg-transparent">Instagram</a>
-                </li>
-                <li>
                     <a href="https://www.facebook.com/nataproduct" rel="external" aria-label="Facebook" target="_blank"
                         class="block text-white font-dm-sans md:bg-transparent">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nat.adesign" rel="external" aria-label="Instagram"
+                        target="_blank" class="block text-white font-dm-sans md:bg-transparent">Instagram</a>
                 </li>
                 <li>
                     <a href="https://www.tiktok.com/@nat.adesign" rel="external" aria-label="Tiktok" target="_blank"
