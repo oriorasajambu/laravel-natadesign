@@ -336,51 +336,5 @@
     </div>
 @endsection
 @section('scripts')
-    <script>
-        $(document).ready(function() {
-            const formId = "#formInquiryPrice";
-            $(formId).submit(function(event) {
-                $("#btnInquiryPrice").prop('disabled', true);
-                $("#default-button").addClass('hidden');
-                $("#loading-button").removeClass('hidden');
-                $("#loading-button").addClass('inline-flex');
-                let formData = {
-                    name: $(formId).find("input[name=name]").val(),
-                    phone: $(formId).find("input[name=phone]").val(),
-                    email: $(formId).find("input[name=email]").val(),
-                    type: $(formId).find("input[name=type]").val(),
-                    size: $(formId).find("input[name=size]").val(),
-                    location: $(formId).find("input[name=location]").val(),
-                    job: $(formId).find("input[name=job]").val(),
-                    time: $(formId).find("input[name=time]").val(),
-                    info: $(formId).find("textarea[name=info]").val(),
-                }
-
-                $.ajax({
-                    method: 'POST',
-                    url: "{{ route('inquiry.price') }}",
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    data: formData,
-                    success: function(data) {
-                        $("#btnInquiryPrice").removeAttr('disabled');
-                        $("#loading-button").removeClass('inline-flex');
-                        $("#loading-button").addClass('hidden');
-                        $("#default-button").removeClass('hidden');
-                        if (data.code == 200 && data.success) {
-                            //TODO Show Notif Success
-                            $(formId).each(function() {
-                                this.reset();
-                            });
-                        } else {
-                            //TODO Show Notif Failed
-                        }
-                    }
-                });
-
-                event.preventDefault();
-            });
-        })
-    </script>
+    <script src="{{ asset('js/jquery/estimate-price.js')}}" defer></script>
 @endsection
