@@ -13,6 +13,7 @@
         ExpiresByType text/css "access plus 1 year"
         ExpiresByType text/javascript "access plus 1 year"
         ExpiresByType application/x-javascript "access plus 1 year"
+        ExpiresByType application/javascript "access plus 1 year"
 
         # Fonts
         ExpiresByType font/ttf "access plus 1 year"
