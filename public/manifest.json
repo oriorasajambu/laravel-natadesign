@@ -28,19 +28,25 @@
     ],
     "shortcuts": [
         {
-            "name": "Portofolio",
+            "name": "Lihat Portofolio",
+            "short_name": "Portofolio",
             "url": "/portofolio",
-            "description": "List of new portofolio"
+            "description": "List of new portofolio",
+            "icons": [{ "src": "/favicon-96.png", "sizes": "96x96" }]
         },
         {
-            "name": "Postingan",
+            "name": "Lihat Postingan",
+            "short_name": "Postingan",
             "url": "/articles",
-            "description": "List of new articles"
+            "description": "List of new articles",
+            "icons": [{ "src": "/favicon-96.png", "sizes": "96x96" }]
         },
         {
-            "name": "Ulasan Media",
+            "name": "Lihat Ulasan Media",
+            "short_name": "Ulasan Media",
             "url": "/media",
-            "description": "List of new media reviews"
+            "description": "List of new media reviews",
+            "icons": [{ "src": "/favicon-96.png", "sizes": "96x96" }]
         }
     ],
     "screenshots": [
