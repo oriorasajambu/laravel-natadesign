@@ -15,7 +15,6 @@
 <body class="overflow-x-hidden bg-partial scroll-smooth">
     @yield('content')
 
-    <script src="https://kit.fontawesome.com/f7e5c3263d.js" crossorigin="anonymous" defer></script>
     <script src="{{ asset('js/jquery/jquery.min.js') }}" defer></script>
     <script src="{{ asset('js/jquery/jquery-ui/jquery-ui.min.js') }}" defer></script>
     <script src="{{ asset('js/jquery/jquery-form.min.js') }}" defer></script>
