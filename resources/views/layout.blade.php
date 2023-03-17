@@ -10,6 +10,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     @yield('head')
+    <meta name="theme-color" content="#10403C"/>
 </head>
 
 <body class="overflow-x-hidden bg-partial scroll-smooth">

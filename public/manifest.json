@@ -3,13 +3,18 @@
     "name": "Nat.A Design Website",
     "icons": [
         {
-            "src": "/assets/favicon.svg",
+            "src": "/assets/favicon-512.svg",
             "type": "image/svg+xml",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/images/favicon-512.png",
+            "type": "image/png",
             "sizes": "512x512"
         }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "id": "/",
+    "start_url": "/",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
