@@ -51,17 +51,17 @@ body {
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 400;
-        src: url('../fonts/playfair-display-v30-latin-regular.eot');
+        src: url('../../fonts/playfair-display-v30-latin-regular.eot');
         /* IE9 Compat Modes */
-        src: url('../fonts/playfair-display-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
+        src: url('../../fonts/playfair-display-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
             /* IE6-IE8 */
-            url('../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'),
+            url('../../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'),
             /* Super Modern Browsers */
-            url('../fonts/playfair-display-v30-latin-regular.woff') format('woff'),
+            url('../../fonts/playfair-display-v30-latin-regular.woff') format('woff'),
             /* Modern Browsers */
-            url('../fonts/playfair-display-v30-latin-regular.ttf') format('truetype'),
+            url('../../fonts/playfair-display-v30-latin-regular.ttf') format('truetype'),
             /* Safari, Android, iOS */
-            url('../fonts/playfair-display-v30-latin-regular.svg#PlayfairDisplay') format('svg');
+            url('../../fonts/playfair-display-v30-latin-regular.svg#PlayfairDisplay') format('svg');
         /* Legacy iOS */
     }
 
@@ -72,17 +72,17 @@ body {
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
-        src: url('../fonts/dm-sans-v11-latin-regular.eot');
+        src: url('../../fonts/dm-sans-v11-latin-regular.eot');
         /* IE9 Compat Modes */
-        src: url('../fonts/dm-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+        src: url('../../fonts/dm-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
             /* IE6-IE8 */
-            url('../fonts/dm-sans-v11-latin-regular.woff2') format('woff2'),
+            url('../../fonts/dm-sans-v11-latin-regular.woff2') format('woff2'),
             /* Super Modern Browsers */
-            url('../fonts/dm-sans-v11-latin-regular.woff') format('woff'),
+            url('../../fonts/dm-sans-v11-latin-regular.woff') format('woff'),
             /* Modern Browsers */
-            url('../fonts/dm-sans-v11-latin-regular.ttf') format('truetype'),
+            url('../../fonts/dm-sans-v11-latin-regular.ttf') format('truetype'),
             /* Safari, Android, iOS */
-            url('../fonts/dm-sans-v11-latin-regular.svg#DMSans') format('svg');
+            url('../../fonts/dm-sans-v11-latin-regular.svg#DMSans') format('svg');
         /* Legacy iOS */
     }
 }
