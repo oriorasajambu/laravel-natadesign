@@ -10,7 +10,7 @@
                             class="basis-[19%] w-full grow aspect-square"
                             alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
                         <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
-                        <div class="text-secondary font-dm-sans text-base leading-6 line-clamp-3">
+                        <div class="text-partial font-dm-sans text-base leading-6 line-clamp-3">
                             {!! $article->content !!}
                         </div>
                     </article>
@@ -21,7 +21,7 @@
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
                         <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
-                        <div class="text-secondary font-dm-sans text-base leading-6 line-clamp-3">
+                        <div class="text-partial font-dm-sans text-base leading-6 line-clamp-3">
                             {!! $article->content !!}
                         </div>
                         <img src="{{ isset($article->thumbnail->image) ? 'https://admin.natadesign.id/' . $article->thumbnail->image : asset('assets/favicon.svg') }}"
