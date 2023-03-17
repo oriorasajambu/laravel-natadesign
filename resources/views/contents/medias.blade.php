@@ -16,7 +16,7 @@
                         <x-common.subtitle-component class="uppercase text-primary">
                             Ulasan Media
                         </x-common.subtitle-component>
-                        <h6 class='font-play-serif font-bold uppercase text-2xl text-primary xs:hidden'>Informasi</h6>
+                        <h3 class='font-play-serif font-bold uppercase text-2xl text-primary xs:hidden'>Informasi</h3>
                     </div>
                     <x-common.divider-x-component class="" />
                     <x-common.article-component :articles='$medias->items()' />
