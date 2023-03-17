@@ -3,12 +3,12 @@
     "name": "Nat.A Design Website",
     "icons": [
         {
-            "src": "/assets/favicon-512.svg",
+            "src": "/favicon-512.svg",
             "type": "image/svg+xml",
             "sizes": "512x512"
         },
         {
-            "src": "/images/favicon-512.png",
+            "src": "/favicon-512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
