@@ -269,7 +269,7 @@
                                 </div>
                             </button>
                             <div class="flex flex-col justify-between items-end xs:items-center xs:gap-6 xs:mt-6">
-                                <h4 class="text-xl text-partial font-dm-sans font-bold">Temukan Kami</h4>
+                                <h3 class="text-xl text-partial font-dm-sans font-bold">Temukan Kami</h3>
                                 <div class="flex justify-end gap-6">
                                     <div class="text-partial h-6">
                                         <a aria-label="Facebook" href="https://www.facebook.com/nataproduct"
