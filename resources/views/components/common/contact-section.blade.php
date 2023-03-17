@@ -40,7 +40,7 @@
                             <div
                                 class="lg:h-12 md:h-12 h-12 relative self-start xs:self-center lg:basis-1/3 md:basis-1/4 basis-1/5">
                                 <img width="48" height="48" src={{ asset('assets/icon_info.svg') }}
-                                    alt="Logo Information" />
+                                    alt="Logo Information" loading="lazy" />
                             </div>
                             <div
                                 class="font-dm-sans text-partial leading-8 lg:text-xl lg:basis-2/3 md:basis-3/4 basis-4/5">
@@ -49,9 +49,9 @@
                         </div>
                     </div>
                     <div class="flex-1 h-full min-h-[360px] xs:hidden">
-                        <div style=" position: relative; textAlign: right; height: 100%; width: 100%;">
+                        <div style="position: relative; textAlign: right; height: 100%; width: 100%;">
                             <div style="overflow: hidden; background: none !important; height: 100%; width: 100%;">
-                                <iframe width="100%" height="100%" id="gmap_canvas"
+                                <iframe width="100%" height="100%" id="gmap_canvas" loading="lazy"
                                     title="Nat.A Design Google Map Location" src="{{ $contact->map }}"
                                     style="border: 0; overflow: hidden; margin: 0 0;">
                                 </iframe>
@@ -114,7 +114,7 @@
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
                                 <div class="w-[67px] h-[52px]">
                                     <img src={{ asset('assets/oiji_icon.png') }} width="67" height="52"
-                                        alt="Logo Oiji" />
+                                        alt="Logo Oiji" loading="lazy"/>
                                 </div>
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>
@@ -126,7 +126,7 @@
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
                                 <div class="w-[67px] h-[70px]">
                                     <img src={{ asset('assets/A_icon.png') }} width="67" height="70"
-                                        alt="Logo Andara" />
+                                        alt="Logo Andara" loading="lazy"/>
                                 </div>
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>

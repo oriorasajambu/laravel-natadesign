@@ -23,7 +23,7 @@
                         <p>{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}</p>
                     </div>
                     <img src="{{ isset($album->cover->image) ? 'https://admin.natadesign.id/' . $album->cover->image : asset('assets/favicon.svg') }}"
-                        class="basis-[19%] relative w-full grow aspect-square self-center"
+                        class="basis-[19%] relative w-full grow aspect-square self-center" loading="lazy"
                         alt="{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}" />
                 </div>
             </a>

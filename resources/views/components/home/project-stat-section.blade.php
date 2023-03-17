@@ -36,7 +36,7 @@
                         <div class="aspect-square bg-no-repeat bg-cover bg-center p-6 xs:p-0"
                             style="background-image: url({{ asset('assets/bg-circle.svg') }}) ">
                             <div class="flex justify-center items-center w-full h-full relative">
-                                <img class="aspect-square w-full" width="350" height="350"
+                                <img class="aspect-square w-full" width="350" height="350" loading="lazy"
                                     src="{{ asset('assets/sample1.webp') }}" alt="Restoran Image" />
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="aspect-square bg-no-repeat bg-cover bg-center p-6 xs:p-0"
                             style="background-image: url('{{ asset('assets/bg-circle.svg') }}') ">
                             <div class="flex justify-center items-center w-full h-full relative">
-                                <img class="aspect-square w-full" width="350" height="350"
+                                <img class="aspect-square w-full" width="350" height="350" loading="lazy"
                                     src="{{ asset('assets/sample2.webp') }}" alt="Coffe Shop Image" />
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="aspect-square bg-no-repeat bg-cover bg-center p-6 xs:p-0"
                             style="background-image: url({{ asset('assets/bg-circle.svg') }}) ">
                             <div class="flex justify-center items-center w-full h-full relative">
-                                <img class="aspect-square w-full" width="350" height="350"
+                                <img class="aspect-square w-full" width="350" height="350" loading="lazy"
                                     src="{{ asset('assets/sample3.webp') }}" alt="Cafe Image" />
                             </div>
                         </div>

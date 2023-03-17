@@ -7,7 +7,7 @@
                     {{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}</p>
                 <img class="w-full aspect-square"
                     src="{{ isset($album->cover->image) ? 'https://admin.natadesign.id/' . $album->cover->image : asset('assets/favicon.svg') }}"
-                    alt="{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}" width="239"
+                    alt="{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}" width="239" loading="lazy"
                     height="239" />
             </div>
         </a>
