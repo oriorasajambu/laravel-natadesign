@@ -4,10 +4,8 @@
         <a aria-label="{{ $article->title }}"
             href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
             <div class="grid grid-cols-1 mt-12">
-                <div class="w-full h-auto aspect-square">
-                    <img src="{{ isset($article->thumbnail->image) ? 'https://admin.natadesign.id/' . $article->thumbnail->image : asset('assets/favicon.svg') }}"
-                        alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
-                </div>
+                <img class="w-full aspect-square" src="{{ isset($article->thumbnail->image) ? 'https://admin.natadesign.id/' . $article->thumbnail->image : asset('assets/favicon.svg') }}"
+                        alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" width="239" height="239" />
                 <h3 class="mt-6 font-dm-sans font-bold text-2xl text-partial">{{ $article->title }}</h3>
                 <p class="font-dm-sans font-bold text-xs my-6 text-partial">Ditulis oleh
                     {{ $article->user->name }}
