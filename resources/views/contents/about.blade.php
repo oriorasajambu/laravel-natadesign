@@ -15,7 +15,7 @@
                     class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
                     @foreach ($topImages as $key => $topImage)
                         <img src="https://admin.natadesign.id/{{ $topImage->image }}" width="550" height="550"
-                            alt="{{ $topImage->alt }}"
+                            alt="{{ $topImage->alt }}" loading="eager"
                             class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative" />
                     @endforeach
                 </div>
@@ -51,7 +51,7 @@
                             class="grid grid-cols-2 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
                             @foreach ($employees as $key => $employee)
                                 <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
-                                    <img src="https://admin.natadesign.id/{{ $employee->image }}" width="391"
+                                    <img src="https://admin.natadesign.id/{{ $employee->image }}" loading="lazy" width="391"
                                         height="336" alt="{{ $employee->alt }}" />
                                     <h4
                                         class="font-dm-sans font-bold text-primary uppercase self-start lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl">
@@ -101,7 +101,7 @@
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 m-0">
                     @foreach ($bottomImages as $key => $bottomImage)
-                        <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" width="550" height="550"
+                        <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" loading="lazy" width="550" height="550"
                             alt="{{ $bottomImage->alt }}"
                             class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative" />
                     @endforeach
