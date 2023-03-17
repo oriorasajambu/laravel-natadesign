@@ -16,9 +16,9 @@
     @yield('content')
 
     <script src="https://kit.fontawesome.com/f7e5c3263d.js" crossorigin="anonymous" defer></script>
-    <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/jquery/jquery-ui/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('js/jquery/jquery-form.min.js') }}"></script>
+    <script src="{{ asset('js/jquery/jquery.min.js') }}" async></script>
+    <script src="{{ asset('js/jquery/jquery-ui/jquery-ui.min.js') }}" async></script>
+    <script src="{{ asset('js/jquery/jquery-form.min.js') }}" async></script>
 
     <script>
         $(document).ready(function() {
