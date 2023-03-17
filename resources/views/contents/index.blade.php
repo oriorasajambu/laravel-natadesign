@@ -7,7 +7,8 @@
 @endsection
 @section('content')
     <div style="background-image: url({{ asset('assets/fixed_background.webp') }})"
-        class="h-screen w-full bg-no-repeat bg-cover bg-center bg-fixed absolute" />
+        class="h-screen w-full bg-no-repeat bg-cover bg-center bg-fixed absolute">
+    </div>
 
     <x-home.heroes-section />
 
