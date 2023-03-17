@@ -1,6 +1,6 @@
 @extends('layout')
 @section('head')
-    <link rel="stylesheet" href="{{ asset('js/swiper-js/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/swiper-js/custom-swiper.min.css') }}">
     <script src="{{ asset('js/swiper-js/swiper-bundle.min.js') }}" defer></script>
     <x-custom-head-component :seo="$seo" />
 @endsection
