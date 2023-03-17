@@ -15,7 +15,7 @@ module.exports = {
       },
       aspectRatio: {
         'highlight': '25 / 12',
-        'section': '2.1/1',
+        'section': '1.78/1',
         'about': '2.08/1',
       },
       fontFamily: {
