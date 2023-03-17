@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Playfair+Display:wght@400;500;600;700&display=swap">
-    <script src="https://kit.fontawesome.com/f7e5c3263d.js" crossorigin="anonymous" defer></script>
 
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
@@ -20,6 +19,7 @@
 <body class="overflow-x-hidden bg-partial scroll-smooth">
     @yield('content')
 
+    <script src="https://kit.fontawesome.com/f7e5c3263d.js" crossorigin="anonymous" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
