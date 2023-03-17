@@ -1,5 +1,6 @@
 @extends('layout')
 @section('head')
+    <link rel="preload" as="image" href="{{ asset('assets/fixed_background.webp') }}">
     <link rel="stylesheet" href="{{ asset('js/swiper-js/swiper-bundle.min.css') }}">
     <script src="{{ asset('js/swiper-js/swiper-bundle.min.js') }}" defer></script>
     <x-custom-head-component :seo="$seo" />
