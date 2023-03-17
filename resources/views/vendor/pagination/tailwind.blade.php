@@ -4,7 +4,7 @@
             <span class="relative z-0 inline-flex gap-3">
                 {{-- Previous Page Link --}}
                 @if ($paginator->onFirstPage())
-                    <span class="relative inline-flex items-center py-2" aria-disabled="true" aria-label="{{ __('pagination.previous') }}">
+                    <span role="button" class="relative inline-flex items-center py-2" aria-disabled="true" aria-label="{{ __('pagination.previous') }}">
                         <span class="relative inline-flex items-center px-2 py-2" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25.144" height="14.382"
                                 viewBox="0 0 25.144 14.382">
@@ -50,7 +50,7 @@
                     @if (is_array($element))
                         @foreach ($element as $page => $url)
                             @if ($page == $paginator->currentPage())
-                                <span aria-current="page">
+                                <span role="button" aria-current="page">
                                     <span
                                         class="relative inline-flex items-center px-4 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-primary text-white">{{ $page }}</span>
                                 </span>
@@ -83,7 +83,7 @@
                         </svg>
                     </a>
                 @else
-                    <span class="relative inline-flex items-center py-2" aria-disabled="true" aria-label="{{ __('pagination.next') }}">
+                    <span role="button" class="relative inline-flex items-center py-2" aria-disabled="true" aria-label="{{ __('pagination.next') }}">
                         <span class="relative inline-flex items-center px-2 py-2 -ml-px" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25.144" height="14.382"
                                 viewBox="0 0 25.144 14.382">
