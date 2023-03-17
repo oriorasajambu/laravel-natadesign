@@ -39,7 +39,7 @@
                             class="flex flex-row xs:flex-col xs:gap-6 content-start grow border-b-[1px] border-primary pb-12">
                             <div
                                 class="lg:h-12 md:h-12 h-12 relative self-start xs:self-center lg:basis-1/3 md:basis-1/4 basis-1/5">
-                                <img width={48} height={48} src={{ asset('assets/icon_info.svg') }}
+                                <img width="48" height="48" src={{ asset('assets/icon_info.svg') }}
                                     alt="Logo Information" />
                             </div>
                             <div
