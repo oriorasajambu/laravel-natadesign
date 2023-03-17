@@ -6,7 +6,7 @@
                     {{ $headline }}
                 </p>
                 <div class="relative flex justify-center items-center">
-                    <input type="checkbox" class="peer absolute w-full h-full p-0 m-0 opacity-0 z-10 cursor-pointer" />
+                    <input type="checkbox" aria-label="Like" class="peer absolute w-full h-full p-0 m-0 opacity-0 z-10 cursor-pointer" />
                     <span
                         class="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-[#d97373] transition-transform duration-500 opacity-75 peer-checked:opacity-0"></span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-[50px] h-[50px] transition-transform duration-500 opacity-100 peer-checked:opacity-0" viewBox="0 0 67 67">
