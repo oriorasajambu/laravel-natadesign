@@ -26,5 +26,5 @@
     "scope": "/",
     "theme_color": "#10403C",
     "description": "Website For Nat.A Design",
-    "prefer_related_applications": true
+    "prefer_related_applications": false
 }
