@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="manifest" href="{{ asset('manifest.json') }}">
+    <link rel="preload" href="{{ asset('fonts/playfair-display-v30-latin-regular.woff2') }}" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ asset('fonts/dm-sans-v11-latin-regular.woff2') }}" as="font" type="font/woff2"
+        crossorigin>
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     @yield('head')
