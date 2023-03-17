@@ -144,11 +144,11 @@
                     </div>
                     <form id="formSendContact" class="flex-1 grid grid-cols-1 gap-6"
                         action="{{ route('send.contact') }}" method="POST">
-                        <x-common.input-component class="" id="1" label="Nama Lengkap"
+                        <x-common.input-component class="" id="contactName" label="Nama Lengkap"
                             placeHolder="Nama Lengkap" type="text" name="name" isTextArea='false' />
-                        <x-common.input-component class="" id="2" label="Email"
+                        <x-common.input-component class="" id="contactEmail" label="Email"
                             placeHolder="Alamat Email" type="email" name="email" isTextArea='false' />
-                        <x-common.input-component class="" id="3" label="Pertanyaan"
+                        <x-common.input-component class="" id="contactQuestion" label="Pertanyaan"
                             placeHolder="Apa ada pertanyaan yang ingin Anda tanyakan? Tim Terbaik kami siap untuk membantu."
                             type="text" name="question" isTextArea='true' />
                         <div class="flex flex-row justify-between">
