@@ -53,10 +53,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
         $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
-        $albums = Album::select('albums.*', 'image', 'original', 'alt')
-            ->join('gallery', 'gallery.id', '=', 'albums.cover_id')
-            ->orderBy('albums.position', 'DESC')
-            ->paginate(9);
+        $albums = Album::orderBy('position', 'DESC')->paginate(9);
         $contact = Contact::first();
         $data = [
             'seo' => $seoCategory->seo,
