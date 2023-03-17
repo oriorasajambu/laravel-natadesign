@@ -51,7 +51,7 @@
         </div>
         <a href="/" aria-label='Homepage'
             class="flex items-center lg:h-[67px] lg:w-[67px] md:h-[67px] md:w-[67px] sm:h-[67px] sm:w-[67px] h-10 w-10 xs:ml-1 relative">
-            <img src="{{ asset('assets/favicon.svg') }}" alt="Natadesign Logo" />
+            <img src="{{ asset('assets/favicon.svg') }}" width="67" height="67" alt="Natadesign Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button" onClick={revealModal}
             class="inline-flex items-center ml-3 text-sm text-white rounded-lg lg:hidden md:hidden sm:hidden"
