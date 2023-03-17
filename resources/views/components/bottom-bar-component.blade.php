@@ -11,7 +11,7 @@
         <div class="w-auto lg:hidden md:hidden sm:hidden xs:block">
             <ul class="lg:hidden md:hidden sm:hidden xs:flex flex-row justify-center">
                 <li>
-                    <a href="https://www.instagram.com/nat.adesign" rel="external" aria-label="Instagram" target="_blank"
+                    <a href="https://www.facebook.com/nataproduct" rel="external" aria-label="Facebook" target="_blank"
                         tabIndex="0" class="block py-2 pl-3 pr-4 text-white font-dm-serif">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="21" viewBox="0 0 320 512">
                             <path fill="#FFFFFF"
@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/nataproduct" rel="external" aria-label="Facebook" target="_blank"
+                    <a href="https://www.instagram.com/nat.adesign" rel="external" aria-label="Instagram" target="_blank"
                         tabIndex="0" class="block py-2 pl-3 pr-4 text-white font-dm-serif">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="21" viewBox="0 0 448 512">
                             <path fill="#FFFFFF"
