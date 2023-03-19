@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <x-common.divider-y-component class="xs:hidden block" />
+                        <x-common.divider-y-component class="ssm:hidden xs:hidden block" />
                         <x-common.divider-x-component class="" />
                         <div
                             class="grid grid-cols-2 ssm:grid-col-1 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
