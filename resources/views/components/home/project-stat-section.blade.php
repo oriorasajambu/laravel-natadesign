@@ -1,4 +1,4 @@
-<div class="bg-[#FFFBF2] pb-20 flex flex-row justify-center">
+<div class="bg-[#FFFBF2] pb-20 pt-10 flex flex-row justify-center">
     <div class='lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0'>
         <div class="flex flex-row justify-between">
             <div class="flex flex-col w-full gap-6 lg:gap-12">
