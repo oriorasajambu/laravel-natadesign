@@ -59,7 +59,7 @@
                             <p class="font-dm-sans text-secondary">Kategori: {{ $article->category->name }}</p>
                         </div>
                     </div>
-                    <div class="lg:flex md:flex sm:hidden xs:hidden basis-1/3 lg:pl-12 md:pl-12 pl-0 flex-col bg-[#FFFBF2]">
+                    <div class="lg:flex md:flex sm:hidden ssm:hidden xs:hidden basis-1/3 lg:pl-12 md:pl-12 pl-0 flex-col bg-[#FFFBF2]">
                         <x-common.vertical-article-component :articles="$articles" title="Ulasan Terbaru" />
                         <a href='/media' aria-label='See More Media Review'
                             class="font-dm-sans text-partial">Selengkapnya</a>
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <x-common.project-section class="lg:hidden md:hidden sm:hidden xs:flex"
+        <x-common.project-section class="lg:hidden md:hidden sm:hidden ssm:flex xs:flex"
             classTitle="text-primary text-start leading-none" :showButton=true>
             <x-common.project-component :albums="$albums" />
             <a aria-label="See Our Portofolio" href="/portofolio"
@@ -80,7 +80,7 @@
             </a>
         </x-common.project-section>
 
-        <x-common.article-section class="lg:hidden md:hidden sm:hidden xs:flex" classTitle="text-primary"
+        <x-common.article-section class="lg:hidden md:hidden sm:hidden ssm:flex xs:flex" classTitle="text-primary"
             title="Ulasan Terbaru" pathName="media">
             <x-common.article-component :articles="$articles" />
         </x-common.article-section>
