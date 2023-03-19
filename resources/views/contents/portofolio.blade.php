@@ -25,7 +25,7 @@
                             <div
                                 class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square">
                                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager"
-                                    alt="{{ $photo->alt }}" class="select-none"
+                                    alt="{{ $photo->alt }}" class="select-none hover:cursor-pointer"
                                     onclick="openModal();currentSlide({{ $key + 1 }})" />
                             </div>
                         @endforeach
@@ -71,14 +71,15 @@
 @endsection
 @section('scripts')
     <script>
+        let modal = document.getElementById("lightShowModal");
         // Open the Modal
         function openModal() {
-            document.getElementById("lightShowModal").style.display = "block";
+            modal.style.display = "block";
         }
 
         // Close the Modal
         function closeModal() {
-            document.getElementById("lightShowModal").style.display = "none";
+            modal.style.display = "none";
         }
 
         var slideIndex = 1;
@@ -107,6 +108,12 @@
                 slides[i].style.display = "none";
             }
             slides[slideIndex - 1].style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
 @endsection
