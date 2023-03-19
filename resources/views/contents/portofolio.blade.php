@@ -35,8 +35,8 @@
                                 {!! $album->album_detail !!}
                             </p>
                         </div>
-                        <x-common.divider-x-component class="hidden xs:block" />
-                        <x-common.divider-y-component class="block xs:hidden" />
+                        <x-common.divider-x-component class="hidden ssm:block xs:block" />
+                        <x-common.divider-y-component class="block ssm:hidden xs:hidden" />
                         <div class="lg:basis-1/2 md:basis-1/2 sm:basis-1/2 lg:pl-12 md:pl-12 sm:pl-12 xs:pl-0 py-12">
                             <p class="font-dm-sans lg:text-2xl md:text-2xl sm:text-xl xs:text-xl text-partial">
                                 {!! $album->album_description !!}
