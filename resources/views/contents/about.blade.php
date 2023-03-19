@@ -16,7 +16,7 @@
                     @foreach ($topImages as $key => $topImage)
                         <img src="https://admin.natadesign.id/{{ $topImage->image }}" width="550" height="550"
                             alt="{{ $topImage->alt }}" loading="eager"
-                            class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative" />
+                            class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square relative" />
                     @endforeach
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     @foreach ($bottomImages as $key => $bottomImage)
                         <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" loading="lazy" width="550" height="550"
                             alt="{{ $bottomImage->alt }}"
-                            class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square relative" />
+                            class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square relative" />
                     @endforeach
                 </div>
             </div>

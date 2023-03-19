@@ -19,17 +19,17 @@
                     </div>
                     <x-common.divider-x-component class="" />
                     <div
-                        class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 pt-20 pb-1 m-0">
+                        class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 ssm:gap-x-3 xs:gap-x-2 pt-20 pb-1 m-0">
                         @foreach ($album->photos as $key => $photo)
                             <div
-                                class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square">
+                                class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square">
                                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager" alt="{{ $photo->alt }}"
                                     class="select-none" />
                             </div>
                         @endforeach
                     </div>
                     <x-common.divider-x-component class="mt-20" />
-                    <div class="flex flex-row xs:flex-col w-full items-stretch gap-[1px] relative">
+                    <div class="flex flex-row ssm:flex-col xs:flex-col w-full items-stretch gap-[1px] relative">
                         <div class="lg:basis-1/2 md:basis-1/2 sm:basis-1/2 lg:pr-12 md:pr-12 sm:pr-12 xs:pr-0 py-12">
                             <p class="font-dm-sans lg:text-2xl md:text-2xl sm:text-xl xs:text-xl text-partial">
                                 {!! $album->album_detail !!}
