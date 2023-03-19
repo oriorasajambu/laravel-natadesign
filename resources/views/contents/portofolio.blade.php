@@ -25,7 +25,8 @@
                             <div
                                 class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square">
                                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager"
-                                    alt="{{ $photo->alt }}" class="select-none" />
+                                    alt="{{ $photo->alt }}" class="select-none"
+                                    onclick="openModal();currentSlide({{ $key + 1 }})" />
                             </div>
                         @endforeach
                     </div>
