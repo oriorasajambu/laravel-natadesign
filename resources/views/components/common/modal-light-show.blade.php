@@ -1,6 +1,6 @@
 <div id="lightShowModal" style="display: none" class="fixed z-10 left-0 top-0 w-screen h-screen overflow-hidden backdrop-blur-md bg-white/30">
     <span class="text-white absolute top-3 right-6 text-4xl hover:cursor-pointer" onclick="closeModal()">&times;</span>
-    <div class="relative mx-auto my-auto p-0 w-11/12 max-w-7xl">
+    <div class="relative mx-auto my-auto p-0 w-11/12 h-full max-w-7xl">
         @foreach ($album->photos as $key => $photo)
             <div style="display: none" class="modal-slide">
                 <div class="text-white font-dm-sans absolute top-0 px-1 py-4">{{ $key + 1 }} / {{ count($album->photos) }}</div>
