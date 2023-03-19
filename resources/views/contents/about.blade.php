@@ -48,7 +48,7 @@
                         <x-common.divider-y-component class="xs:hidden block" />
                         <x-common.divider-x-component class="" />
                         <div
-                            class="grid grid-cols-2 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
+                            class="grid grid-cols-2 ssm:grid-col-1 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
                             @foreach ($employees as $key => $employee)
                                 <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
                                     <img src="https://admin.natadesign.id/{{ $employee->image }}" loading="lazy" width="391"
@@ -61,10 +61,10 @@
                                         {{ $employee->job_desk }}</p>
                                 </div>
                                 @if ($key % 2 != 0)
-                                    <x-common.divider-x-component class="col-span-2 xs:col-span-1" />
+                                    <x-common.divider-x-component class="col-span-2 ssm:col-span-1 xs:col-span-1" />
                                 @else
                                     <x-common.divider-x-component
-                                        class="lg:hidden md:hidden sm:hidden xs:block col-span-1" />
+                                        class="lg:hidden md:hidden sm:hidden ssm:block xs:block col-span-1" />
                                 @endif
                             @endforeach
                         </div>
