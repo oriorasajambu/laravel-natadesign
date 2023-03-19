@@ -6,6 +6,9 @@ function openModal() {
     modal.style.display = "block";
     body.style.position = 'fixed';
     body.style.top = `-${scrollY}`;
+    body.style.right = '0';
+    body.style.left = '0';
+    body.style.bottom = '0';
 }
 
 // Close the Modal
@@ -13,6 +16,9 @@ function closeModal() {
     const scrollY = document.body.style.top;
     body.style.position = '';
     body.style.top = '';
+    body.style.right = '';
+    body.style.left = '';
+    body.style.bottom = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
     modal.style.display = "none";
 }
