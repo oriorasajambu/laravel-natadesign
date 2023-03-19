@@ -50,7 +50,7 @@
                     @if (is_array($element))
                         @foreach ($element as $page => $url)
                             @if ($page == $paginator->currentPage())
-                                <span role="button" aria-current="page">
+                                <span role="button" class="h-full" aria-current="page">
                                     <span
                                         class="relative inline-flex items-center px-4 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-primary text-white">{{ $page }}</span>
                                 </span>
