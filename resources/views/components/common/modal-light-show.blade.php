@@ -5,7 +5,7 @@
             <div style="display: none" class="modal-slide">
                 <div class="text-white font-dm-sans absolute top-0 px-1 py-4">{{ $key + 1 }} / {{ count($album->photos) }}</div>
                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="lazy" width="550" height="550"
-                    alt="{{ $photo->alt }}" class="select-none aspect-square w-9/12 xs:w-screen absolute top-1/2 left-1/2 -translate-x-1/2">
+                    alt="{{ $photo->alt }}" class="select-none aspect-square w-9/12 xs:w-screen absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             </div>
         @endforeach
 
