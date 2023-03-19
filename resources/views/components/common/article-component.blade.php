@@ -1,8 +1,8 @@
 <div class="flex flex-col gap-6">
-    <div class='grid grid-cols-3 ssm:grid-cols-1 xs:grid-cols-1 lg:gap-6 md:gap-6 sm:gap-6 xs:gap-8 lg:mt-20 mt-10'>
+    <div class='grid grid-cols-3 ssm:grid-cols-1 xs:grid-cols-1 lg:gap-6 md:gap-6 sm:gap-6 ssm:gap-8 xs:gap-8 lg:mt-20 mt-10'>
         @foreach ($articles as $key => $article)
             @if ($key % 2 == 0)
-                <a aria-label={{ $article->title }} class="lg:block md:block sm:block xs:hidden"
+                <a aria-label={{ $article->title }} class="lg:block md:block sm:block ssm:hidden xs:hidden"
                     href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
@@ -16,7 +16,7 @@
                     </article>
                 </a>
             @else
-                <a aria-label={{ $article->title }} class="lg:block md:block sm:block xs:hidden"
+                <a aria-label={{ $article->title }} class="lg:block md:block sm:block ssm:hidden xs:hidden"
                     href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
                     <article class="flex flex-col gap-6">
                         <x-common.date-component date='{{ $article->published_at }}' />
@@ -30,9 +30,9 @@
                     </article>
                 </a>
             @endif
-            <a aria-label={{ $article->title }} class="lg:hidden md:hidden sm:hidden xs:block"
+            <a aria-label={{ $article->title }} class="lg:hidden md:hidden sm:hidden ssm:block xs:block"
                 href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
-                <article class="flex flex-col lg:gap-6 md:gap-6 sm:gap-3 xs:gap-3">
+                <article class="flex flex-col lg:gap-6 md:gap-6 ssm:gap-3 sm:gap-3 xs:gap-3">
                     <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <div class="text-partial font-dm-sans text-base leading-6 line-clamp-3">
