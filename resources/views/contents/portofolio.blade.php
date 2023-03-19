@@ -5,7 +5,8 @@
 @section('content')
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
+            <div
+                class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
                 <x-top-bar-component class="bg-primary" />
             </div>
         </div>
@@ -23,8 +24,8 @@
                         @foreach ($album->photos as $key => $photo)
                             <div
                                 class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square">
-                                <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager" alt="{{ $photo->alt }}"
-                                    class="select-none" />
+                                <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager"
+                                    alt="{{ $photo->alt }}" class="select-none" />
                             </div>
                         @endforeach
                     </div>
@@ -63,7 +64,55 @@
         <x-common.contact-section :contact="$contact" />
 
         <x-common.footer-section />
+
+        <x-common.modal-light-show :album="$album" />
     </div>
 @endsection
 @section('scripts')
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("lightShowModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("lightShowModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("modal-slide");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 @endsection
