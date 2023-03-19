@@ -48,7 +48,7 @@
                         <x-common.divider-y-component class="ssm:hidden xs:hidden block" />
                         <x-common.divider-x-component class="" />
                         <div
-                            class="grid grid-cols-2 ssm:grid-col-1 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
+                            class="grid grid-cols-2 ssm:grid-cols-1 xs:grid-cols-1 grid-flow-row justify-center lg:gap-x-20 md:gap-x-10 gap-x-5">
                             @foreach ($employees as $key => $employee)
                                 <div class="flex flex-col gap-6 mx-auto my-20 sm:my-10 xs:my-10">
                                     <img src="https://admin.natadesign.id/{{ $employee->image }}" loading="lazy" width="391"
