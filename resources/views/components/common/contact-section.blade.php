@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-6 lg:gap-12 flex-1">
-                            <p class="text-partial font-dm-sans font-bold text-xl xs:text-center">Subsidiary</p>
+                            <p class="text-partial font-dm-sans font-bold lg:text-xl xs:text-center">Subsidiary</p>
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
                                 <div class="w-[67px] h-[52px]">
                                     <img src={{ asset('assets/oiji_icon.png') }} width="67" height="52"
@@ -119,7 +119,7 @@
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>
                                 <div
-                                    class="grow font-dm-sans text-partial text-xl leading-normal flex-1 xs:text-center">
+                                    class="grow font-dm-sans text-partial text-xl leading-normal flex-1">
                                     <p>Brand Designers & <br class="lg:block hidden" /> Social Media Consultant</p>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>
                                 <div
-                                    class="grow font-dm-sans text-partial text-xl leading-normal flex-1 xs:text-center">
+                                    class="grow font-dm-sans text-partial text-xl leading-normal flex-1">
                                     <p>Architecture & Interiors,
                                         <br class="lg:block hidden" />
                                         Custom Furniture,

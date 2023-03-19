@@ -31,7 +31,7 @@
 
     <x-home.workflows-section :workflows="$workflows" />
 
-    <x-common.project-section class="" classTitle="text-primary text-center leading-none" showButton=false>
+    <x-common.project-section class="" classTitle="text-primary lg:text-center md:text-center sm:text-start xs:text-start leading-none" showButton=false>
         <x-common.project-component :albums="$albums" />
     </x-common.project-section>
 
