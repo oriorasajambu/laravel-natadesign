@@ -32,7 +32,7 @@
             @endif
             <a aria-label={{ $article->title }} class="lg:hidden md:hidden sm:hidden xs:block"
                 href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
-                <article class="flex flex-col lg:gap-6 md:gap-6 sm:gap-3 xs:gap-3">
+                <article class="flex flex-col lg:gap-y-6 md:gap-y-6 sm:gap-y-3 xs:gap-y-3">
                     <h2 class="text-partial font-dm-sans font-bold text-xl truncate">{{ $article->title }}</h2>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <div class="text-partial font-dm-sans text-base leading-6 line-clamp-3">
