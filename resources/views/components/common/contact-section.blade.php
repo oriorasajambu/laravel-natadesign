@@ -38,12 +38,12 @@
                         <div
                             class="flex flex-row xs:flex-col xs:gap-6 content-start grow border-b-[1px] border-primary pb-12">
                             <div
-                                class="w-12 h-12 relative self-start xs:self-center lg:basis-1/3 md:basis-1/4 ssm:basis-1/5 xs:basis-1/5">
+                                class="w-12 h-12 self-start xs:self-center lg:basis-1/3 md:basis-1/4 sm:basis-1/5 ssm:basis-1/5 xs:basis-1/5">
                                 <img width="48" height="48" src={{ asset('assets/icon_info.svg') }}
                                     alt="Logo Information" loading="lazy" />
                             </div>
                             <div
-                                class="font-dm-sans text-partial leading-8 lg:text-xl lg:basis-2/3 md:basis-3/4 ssm:basis-4/5 xs:basis-4/5">
+                                class="font-dm-sans text-partial lg:text-xl lg:basis-2/3 md:basis-3/4 sm:basis-4/5 ssm:basis-4/5 xs:basis-4/5 leading-8">
                                 {!! $contact->info !!}
                             </div>
                         </div>
