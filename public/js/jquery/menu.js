@@ -1,1 +1,1 @@
-let menu=document.getElementById("menu-modal"),body=document.getElementById("body");function openMenu(){menu.style.display="block",body.style.right="0",body.style.left="0",body.style.bottom="0"}function closeMenu(){body.style.right="",body.style.left="",body.style.bottom="",menu.style.display="none"}window.onclick=function(e){e.target==menu&&closeMenu()};
+let menu=document.getElementById("menu-modal");function openMenu(){menu.style.display="block"}function closeMenu(){menu.style.display="none"}window.onclick=function(e){e.target==menu&&closeMenu()};
