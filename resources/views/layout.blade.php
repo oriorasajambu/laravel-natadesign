@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#10403C" />
 </head>
 
-<body class="overflow-x-hidden bg-partial scroll-smooth">
+<body id="body" class="overflow-x-hidden bg-partial scroll-smooth">
     @yield('content')
 
     <script src="{{ asset('js/jquery/jquery.min.js') }}" defer></script>
