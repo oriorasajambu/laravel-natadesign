@@ -12,7 +12,7 @@
         <div class="w-full flex flex-row justify-center lg:pb-20 pb-10 bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div
-                    class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 pt-20 pb-1 m-0">
+                    class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 pt-20 pb-1 m-0">
                     @foreach ($topImages as $key => $topImage)
                         <img src="https://admin.natadesign.id/{{ $topImage->image }}" width="550" height="550"
                             alt="{{ $topImage->alt }}" loading="eager"
@@ -99,7 +99,7 @@
 
         <div class="w-full flex flex-row justify-center lg:py-20 py-10 bg-[#FFFBF2]">
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
-                <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap gap-x-6 m-0">
+                <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 m-0">
                     @foreach ($bottomImages as $key => $bottomImage)
                         <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" loading="lazy" width="550" height="550"
                             alt="{{ $bottomImage->alt }}"
