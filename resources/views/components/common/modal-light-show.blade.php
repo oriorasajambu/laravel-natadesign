@@ -1,11 +1,11 @@
 <div id="lightShowModal" style="display: none" class="fixed z-10 left-0 top-0 w-screen h-screen overflow-hidden backdrop-blur-md bg-white/30">
     <span class="text-white absolute top-3 right-6 text-4xl hover:cursor-pointer" onclick="closeModal()">&times;</span>
-    <div class="relative m-auto p-0 w-11/12 max-w-7xl mt-3">
+    <div class="relative mx-auto my-auto p-0 w-11/12 max-w-7xl">
         @foreach ($album->photos as $key => $photo)
             <div style="display: none" class="modal-slide">
                 <div class="text-white font-dm-sans absolute top-0 px-1 py-4">{{ $key + 1 }} / {{ count($album->photos) }}</div>
                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="lazy" width="550" height="550"
-                    alt="{{ $photo->alt }}" class="select-none aspect-square w-9/12 absolute top-1/2 left-1/2 -translate-x-1/2">
+                    alt="{{ $photo->alt }}" class="select-none aspect-square w-9/12 xs:w-screen absolute top-1/2 left-1/2 -translate-x-1/2">
             </div>
         @endforeach
 

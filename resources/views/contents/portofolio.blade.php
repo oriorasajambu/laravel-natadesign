@@ -97,8 +97,6 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("modal-slide");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
             if (n > slides.length) {
                 slideIndex = 1
             }
@@ -112,8 +110,6 @@
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
 @endsection
