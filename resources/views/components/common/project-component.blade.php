@@ -2,7 +2,7 @@
     <div class="grid grid-cols-3 ssm:grid-cols-1 xs:grid-cols-1 w-full gap-6 lg:mt-20 mt-10">
         @foreach ($albums as $album)
             <a aria-label={{ $album->title }} href="/portofolio/{{ $album->slug }}">
-                <div class="flex flex-col lg:gap-6 md:gap-6 sm:gap-3 xs:gap-3">
+                <div class="flex flex-col lg:gap-6 md:gap-6 sm:gap-3 ssm:gap-3 xs:gap-3">
                     <div class="flex flex-row justify-between items-center">
                         <h2 class="lg:text-2xl md:text-xl text-partial font-dm-sans font-bold truncate">
                             {{ $album->title }}
