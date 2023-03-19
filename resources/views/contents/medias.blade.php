@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <x-common.project-section class="" classTitle="text-primary text-start leading-none" :showButton=true>
+        <x-common.project-section class="py-20" classTitle="text-primary text-start leading-none" :showButton=true>
             <x-common.project-component :albums='$albums' />
             <a aria-label="See Our Portofolio" href="/portofolio"
                 class="border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">

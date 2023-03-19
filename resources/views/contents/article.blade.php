@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <x-common.project-section class="lg:hidden md:hidden sm:hidden ssm:flex xs:flex"
+        <x-common.project-section class="lg:hidden md:hidden sm:hidden ssm:flex xs:flex py-20"
             classTitle="text-primary text-start leading-none" :showButton=true>
             <x-common.project-component :albums="$albums" />
             <a aria-label="See Our Portofolio" href="/portofolio"

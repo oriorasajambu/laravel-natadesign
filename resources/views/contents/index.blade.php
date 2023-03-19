@@ -31,7 +31,7 @@
 
     <x-home.workflows-section :workflows="$workflows" />
 
-    <x-common.project-section class="" classTitle="text-primary lg:text-center md:text-center sm:text-start xs:text-start leading-none" showButton=false>
+    <x-common.project-section class="pt-20" classTitle="text-primary lg:text-center md:text-center sm:text-start xs:text-start leading-none" showButton=false>
         <x-common.project-component :albums="$albums" />
     </x-common.project-section>
 
@@ -63,7 +63,7 @@
 
     <x-home.faq-section :faqs="$faqs" />
 
-    <x-common.project-section class="" classTitle="text-primary text-start leading-none" showButton=true>
+    <x-common.project-section class="py-20" classTitle="text-primary text-start leading-none" showButton=true>
         <x-common.project-component :albums="$albums" />
         <a aria-label="See Our Portofolio" href="/portofolio"
             class="border-2 border-[#707070] text-center mt-6 py-6 text-partial font-dm-sans font-bold lg:text-xl text-base">
