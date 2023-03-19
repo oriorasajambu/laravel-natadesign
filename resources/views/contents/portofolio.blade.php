@@ -22,7 +22,7 @@
                         class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 pt-20 pb-1 m-0">
                         @foreach ($album->photos as $key => $photo)
                             <div
-                                class="{{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square">
+                                class="{{ $key != 0 ? 'lg:ml-3 md:ml-3 sm:ml-0 xs:ml-0' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] xs:h-[250px] aspect-square">
                                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="eager" alt="{{ $photo->alt }}"
                                     class="select-none" />
                             </div>
