@@ -1,5 +1,5 @@
 <div id="lightShowModal" style="display: none"
-    class="fixed z-10 left-0 top-0 w-screen h-screen overflow-hidden bg-black">
+    class="fixed z-10 left-0 top-0 w-screen h-screen overflow-hidden backdrop-blur-lg bg-black/30">
     <div class="relative mx-auto my-auto p-0 w-11/12 h-full max-w-7xl">
         @foreach ($album->photos as $key => $photo)
             <div style="display: none" class="modal-slide">
