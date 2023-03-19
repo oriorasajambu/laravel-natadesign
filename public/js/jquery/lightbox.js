@@ -2,18 +2,19 @@ let modal = document.getElementById("lightShowModal");
 let body = document.getElementById("body");
 // Open the Modal
 function openModal() {
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
     modal.style.display = "block";
     body.style.position = 'fixed';
-    body.style.top = `-${window.scrollY}px`;
+    body.style.top = `-${scrollY}`;
 }
 
 // Close the Modal
 function closeModal() {
     const scrollY = document.body.style.top;
-    modal.style.display = "none";
     body.style.position = '';
     body.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    modal.style.display = "none";
 }
 
 let slideIndex = 1;
@@ -38,6 +39,10 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) closeModal();
 }
+
+window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
