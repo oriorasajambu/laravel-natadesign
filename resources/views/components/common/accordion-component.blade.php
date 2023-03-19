@@ -2,7 +2,7 @@
     <input type="checkbox" aria-label="Toggle Collapse" class="peer absolute w-full h-full p-0 m-0 opacity-0 z-10 cursor-pointer" />
     <div class="flex flex-row justify-between w-full {{ $class }} ">
         @if ($position != -1)
-            <p class="basis-1/6 text-2xl xs:text-xl font-dm-sans text-partial">
+            <p class="basis-1/6 text-2xl ssm:xs:text-xl font-dm-sans text-partial">
                 {{ str_pad($position, 2, '0', STR_PAD_LEFT) }}
             </p>
         @endif
