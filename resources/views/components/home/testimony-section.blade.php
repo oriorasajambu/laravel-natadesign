@@ -7,7 +7,7 @@
                 <p class="text-partial font-dm-sans text-center text-2xl mb-12">Apa kata
                     mereka?
                 </p>
-                <div class="swiper lg:w-[900px] md:w-[600px] sm:w-[600px] ssm:w-[480px] xs:w-[280px]">
+                <div class="swiper lg:w-[900px] md:w-[600px] sm:w-[600px] ssm:w-[460px] xs:w-[280px]">
                     <div class="swiper-wrapper">
                         {{ $slot }}
                     </div>
