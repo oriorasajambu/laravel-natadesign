@@ -65,9 +65,9 @@
         <x-common.contact-section :contact="$contact" />
 
         <x-common.footer-section />
-
-        <x-common.modal-light-show :album="$album" />
     </div>
+
+    <x-common.modal-light-show :album="$album" />
 @endsection
 @section('scripts')
     <script src="{{ asset("js/jquery/lightbox.js") }}"></script>
