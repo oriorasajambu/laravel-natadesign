@@ -1,5 +1,5 @@
 <div class="flex flex-col gap-6">
-    <div class='grid grid-cols-3 xs:grid-cols-1 gap-6 lg:mt-20 mt-10'>
+    <div class='grid grid-cols-3 xs:grid-cols-1 lg:gap-6 md:gap-6 sm:gap-6 xs:gap-8 lg:mt-20 mt-10'>
         @foreach ($articles as $key => $article)
             @if ($key % 2 == 0)
                 <a aria-label={{ $article->title }} class="lg:block md:block sm:block xs:hidden"
