@@ -1,4 +1,4 @@
-<div class="bg-[#FFFBF2] w-full flex flex-row justify-center lg:py-20 md:py-20 sm:py-20 xs:py-20 {{ $class }}">
+<div class="bg-[#FFFBF2] w-full flex flex-row justify-center py-20 {{ $class }}">
     <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
         <div class="grid grid-col-1">
             <x-common.subtitle-component class="{{ $classTitle }}">
