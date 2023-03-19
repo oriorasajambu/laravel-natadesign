@@ -1,9 +1,9 @@
 <div class="bg-[#FFFBF2] py-20 xs:py-10 flex flex-row xs:flex-col items-center justify-center">
-    <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+    <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
         <div class="flex flex-row xs:flex-col justify-between gap-12">
             <div class="flex flex-col gap-12">
-                <div class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col justify-between gap-12">
-                    <div class="flex flex-row xs:flex-col xs:gap-6 flex-1 border-b-[1px] border-primary pb-12 ">
+                <div class="flex lg:flex-row md:flex-col sm:flex-col ssm:flex-col xs:flex-col justify-between gap-12">
+                    <div class="flex flex-row ssm:flex-col xs:flex-col xs:gap-6 flex-1 border-b-[1px] border-primary pb-12 ">
                         <p
                             class="text-partial font-dm-sans font-bold lg:text-xl lg:basis-1/3 md:basis-1/4 sm:basis-1/5 xs:text-center">
                             Alamat</p>
@@ -12,7 +12,7 @@
                             {!! $contact->address !!}
                         </div>
                     </div>
-                    <div class="flex flex-row xs:flex-col xs:gap-6 flex-1 border-b-[1px] border-primary pb-12">
+                    <div class="flex flex-row ssm:flex-col xs:flex-col xs:gap-6 flex-1 border-b-[1px] border-primary pb-12">
                         <p
                             class="text-partial font-dm-sans font-bold lg:text-xl lg:basis-1/3 md:basis-1/4 basis-1/5 xs:text-center">
                             Lokasi</p>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse justify-between gap-12">
+                    class="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse ssm:flex-col-reverse xs:flex-col-reverse justify-between gap-12">
                     <div class="flex flex-col flex-1 gap-12 lg:gap-12">
                         <div class="flex flex-row xs:flex-col xs:gap-6 grow border-b-[1px] border-primary pb-12">
                             <p
@@ -59,10 +59,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-12">
+                <div class="flex lg:flex-row md:flex-col sm:flex-col ssm:flex-col xs:flex-col gap-12">
                     <div class="flex flex-col flex-1 gap-12 lg:gap-12">
                         <div
-                            class="flex flex-row xs:flex-col h-[101.80px] xs:gap-6 border-b-[1px] border-primary pb-12">
+                            class="flex flex-row ssm:flex-col xs:flex-col h-[101.80px] xs:gap-6 border-b-[1px] border-primary pb-12">
                             <p
                                 class="text-partial font-dm-sans font-bold lg:text-xl grow-0 lg:basis-1/3 md:basis-1/4 basis-1/5 xs:text-center">
                                 Temukan <br class="block xs:hidden" /> Kami</p>

@@ -36,7 +36,8 @@ module.exports = {
       }
     },
     screens: {
-      'xs': { 'min': '320px', 'max': '767.98px' },
+      'xs': { 'min': '320px', 'max': '479.98px' },
+      'ssm': { 'min': '480px', 'max': '767.98px'},
       'sm': { 'min': '768px', 'max': '1023.98px' },
       'md': { 'min': '1024px', 'max': '1199px' },
       'lg': { 'min': '1200px', 'max': '6000px' }

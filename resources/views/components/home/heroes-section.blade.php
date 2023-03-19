@@ -1,6 +1,6 @@
 <div class="page-section bg-gradient-to-b from-transparent to-primary opacity-0">
     <div class="w-full flex flex-row justify-center h-screen">
-        <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
+        <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
             <x-top-bar-component class="bg-transparent" />
             <div class="lg:px-20 md:px-0 sm:px-0">
                 <div class="flex flex-wrap sm:flex-nowrap flex-row justify-between my-auto">
@@ -19,7 +19,7 @@
                                 di bidang F&B sejak 2014.
                             </p>
                         </div>
-                        <div class="sm:w-[266px] md:w-[310px]">
+                        <div class="sm:w-[266px] md:w-[310px] ssm:w-[400px] ssm:mx-auto">
                             <a aria-label="Promotion" tabIndex={0}
                                 class="text-primary bg-white text-center lg:text-base md:text-base sm:text-sm xs:text-sm font-dm-sans font-bold uppercase rounded-full border px-6 py-6 block"
                                 href="/information">Dapatkan Penawaran Gratis</a>

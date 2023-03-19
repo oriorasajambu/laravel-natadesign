@@ -5,12 +5,12 @@
 @section('content')
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
                 <x-top-bar-component class="bg-primary" />
             </div>
         </div>
         <div class="w-full flex flex-row justify-center lg:pb-20 pb-10 bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div
                     class="items overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 pt-20 pb-1 m-0">
                     @foreach ($topImages as $key => $topImage)
@@ -23,7 +23,7 @@
         </div>
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div class="grid grid-cols-1 grid-flow-row">
                     <div class="flex flex-row flex-wrap md:flex-nowrap lg:flex-nowrap pb-20 mt-20 xs:mt-10">
                         <div class="lg:basis-1/3 md:basis-1/3 lg:pr-20 md:pr-0">
@@ -92,13 +92,13 @@
             content="{{ $motto->content }}" />
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <x-common.divider-x-component class="" />
             </div>
         </div>
 
         <div class="w-full flex flex-row justify-center lg:py-20 py-10 bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 m-0">
                     @foreach ($bottomImages as $key => $bottomImage)
                         <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" loading="lazy" width="550" height="550"
@@ -110,7 +110,7 @@
         </div>
 
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <x-common.divider-x-component class="" />
             </div>
         </div>

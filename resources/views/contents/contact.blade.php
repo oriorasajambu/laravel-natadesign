@@ -5,12 +5,12 @@
 @section('content')
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] flex flex-col justify-between">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
                 <x-top-bar-component class="bg-primary" />
             </div>
         </div>
         <div class="w-full flex flex-row justify-center bg-[#FFFBF2]">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
+            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div class="flex flex-row sm:flex-col xs:flex-col gap-[1px] bg-primary mt-20">
                     <div class="lg:basis-2/3 md:basis-2/3 flex-1 lg:pr-12 md:pr-12 pr-0 bg-[#FFFBF2] flex flex-col">
                         <div class="flex flex-row justify-between items-center mb-10">

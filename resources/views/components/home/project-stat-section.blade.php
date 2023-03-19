@@ -1,9 +1,9 @@
 <div class="bg-[#FFFBF2] pb-20 flex flex-row justify-center">
-    <div class='lg:w-[1200px] md:w-[864px] sm:w-[608px] xs:w-[280px] lg:px-20 md:px-0 sm:px-0'>
+    <div class='lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0'>
         <div class="flex flex-row justify-between">
             <div class="flex flex-col w-full gap-6 lg:gap-12">
                 <div
-                    class="flex flex-col lg:flex-row md:flex-row sm:flex-row xs:flex-row justify-around xs:justify-between">
+                    class="flex flex-col lg:flex-row md:flex-row sm:flex-row ssm:flex-row xs:flex-row justify-around xs:justify-between">
                     <div class="flex flex-col items-center mb-4">
                         <h2
                             class="text-primary font-dm-sans font-bold text-2xl lg:text-[80px] md:text-5xl sm:text-5xl leading-none">
