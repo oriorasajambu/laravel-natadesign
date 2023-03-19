@@ -7,7 +7,7 @@
                     {{ count($album->photos) }}</div>
                 <img src="https://admin.natadesign.id/{{ $photo->original }}" loading="lazy" width="550" height="550"
                     alt="{{ $photo->alt }}"
-                    class="select-none aspect-square w-9/12 xs:w-screen absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    class="select-none aspect-square w-9/12 xs:w-screen absolute top-1/2 left-1/2 -translate-x-1/2">
                 <span class="text-white absolute z-20 top-3 right-0 text-4xl hover:cursor-pointer"
                     onclick="closeModal()">&times;</span>
             </div>

@@ -18,6 +18,7 @@
 </head>
 
 <body id="body" class="overflow-x-hidden bg-partial scroll-smooth">
+    <x-common.mobile-menu-component />
     @yield('content')
 
     <script src="{{ asset('js/jquery/jquery.min.js') }}" defer></script>
@@ -26,6 +27,8 @@
     <script src="{{ asset('js/jquery/script.js') }}" defer></script>
 
     @yield('scripts')
+
+    <script src="{{ asset('js/jquery/menu.js') }}"></script>
 
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {
