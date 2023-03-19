@@ -9,9 +9,11 @@ function openModal() {
 
 // Close the Modal
 function closeModal() {
+    const scrollY = document.body.style.top;
     modal.style.display = "none";
     body.style.position = '';
     body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
 
 let slideIndex = 1;
