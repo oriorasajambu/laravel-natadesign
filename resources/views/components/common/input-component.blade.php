@@ -4,7 +4,7 @@
     </label>
     @if ($isTextArea == 'true')
         <textarea id="{{ $id }}" name={{ $name }} placeholder="{{ $placeHolder }}" required
-            class="appearance-none bg-transparent border-none w-full h-20 text-partial font-dm-sans leading-tight focus:outline-none"></textarea>
+            class="appearance-none bg-transparent border-none w-full h-24 text-partial font-dm-sans leading-tight focus:outline-none"></textarea>
     @else
         <input id="{{ $id }}" name={{ $name }} type={{ $type }}
             placeholder="{{ $placeHolder }}" required
