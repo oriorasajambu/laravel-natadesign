@@ -24,6 +24,10 @@
     <script src="{{ asset('js/jquery/jquery.min.js') }}" defer></script>
     <script src="{{ asset('js/jquery/jquery-ui/jquery-ui.min.js') }}" defer></script>
     <script src="{{ asset('js/jquery/jquery-form.min.js') }}" defer></script>
+    <script>
+        let targetUrl = "{{ route('send.contact') }}";
+        let targetUrlEstimatePrice = "{{ route('inquiry.price') }}"
+    </script>
     <script src="{{ asset('js/jquery/script.js') }}" defer></script>
 
     @yield('scripts')
