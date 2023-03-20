@@ -26,7 +26,7 @@
     <script src="{{ asset('js/jquery/jquery-form.min.js') }}" defer></script>
     <script>
         let targetUrl = "{{ route('send.contact') }}";
-        let targetUrlEstimatePrice = "{{ route('inquiry.price') }}"
+        let targetUrlEstimatePrice = "{{ route('inquiry.price') }}";
     </script>
     <script src="{{ asset('js/jquery/script.js') }}" defer></script>
 
