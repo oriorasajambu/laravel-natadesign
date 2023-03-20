@@ -4,8 +4,10 @@
 @endsection
 @section('content')
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0"
-        nonce="zylgZq4n"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v16.0&appId=622421175875531&autoLogAppEvents=1"
+        nonce="Mb2fc9zC"></script>
+
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
             <div
@@ -34,31 +36,30 @@
                             </p>
                             <div class="flex flex-row ml-auto items-center">
                                 <p class="text-partial font-dm-sans font-bold text-base mr-6">Bagikan: </p>
-                                <div class="fb-share-button" data-href="https://test.natadesign.id/{{ $article->slug }}"
-                                    data-layout="" data-size="">
+                                <div class="fb-share-button grow"
+                                    data-href="{{ url()->full() }}" data-layout=""
+                                    data-size="">
                                     <a target="_blank"
-                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                                        class="fb-xfbml-parse-ignore">Share</a>
+                                        href="https://www.facebook.com/sharer/sharer.php?u={{ url()->full() }}&amp;src=sdkpreparse"
+                                        class="fb-xfbml-parse-ignore text-partial font-dm-sans font-bold text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28"
+                                            viewBox="0 0 25 28">
+                                            <g id="Icon_feather-share" data-name="Icon feather-share"
+                                                transform="translate(0.5 0.5)">
+                                                <path id="Path_119" data-name="Path 119"
+                                                    d="M6,18V30a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V18"
+                                                    transform="translate(-6 -6)" fill="none" stroke="#404040"
+                                                    strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
+                                                <path id="Path_120" data-name="Path 120" d="M24,9,18,3,12,9"
+                                                    transform="translate(-6 -3)" fill="none" stroke="#404040"
+                                                    strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
+                                                <path id="Path_121" data-name="Path 121" d="M18,3V22.5"
+                                                    transform="translate(-6 -3)" fill="none" stroke="#404040"
+                                                    strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
+                                            </g>
+                                        </svg>
+                                    </a>
                                 </div>
-                                <a aria-label="Share this post" href="#"
-                                    class="text-partial font-dm-sans font-bold grow text-end">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28"
-                                        viewBox="0 0 25 28">
-                                        <g id="Icon_feather-share" data-name="Icon feather-share"
-                                            transform="translate(0.5 0.5)">
-                                            <path id="Path_119" data-name="Path 119"
-                                                d="M6,18V30a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V18" transform="translate(-6 -6)"
-                                                fill="none" stroke="#404040" strokeLinecap="round" strokeLinejoin="round"
-                                                strokeWidth="1" />
-                                            <path id="Path_120" data-name="Path 120" d="M24,9,18,3,12,9"
-                                                transform="translate(-6 -3)" fill="none" stroke="#404040"
-                                                strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
-                                            <path id="Path_121" data-name="Path 121" d="M18,3V22.5"
-                                                transform="translate(-6 -3)" fill="none" stroke="#404040"
-                                                strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
-                                        </g>
-                                    </svg>
-                                </a>
                             </div>
                         </div>
                         <x-common.divider-x-component class="" />
