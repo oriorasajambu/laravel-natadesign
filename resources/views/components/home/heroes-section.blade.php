@@ -6,7 +6,7 @@
                 <div class="flex flex-wrap sm:flex-nowrap flex-row justify-between my-auto">
                     <div class="flex-1 xl:flex-none lg:flex-none md:flex-none sm:flex-none flex flex-col landscape:gap-6 portrait:gap-12">
                         <h1 id="title" data-value="Nat.a Design"
-                            class="text-center lg:text-left md:text-left sm:text-left lg:text-[80px] md:text-[64px] sm:text-[64px] text-5xl text-white font-play-serif font-bold">
+                            class="text-center lg:text-left md:text-left sm:text-left lg:text-[80px] md:text-[64px] sm:text-6xl text-5xl text-white font-play-serif font-bold">
                             Nat.a Design
                         </h1>
                         <div>
