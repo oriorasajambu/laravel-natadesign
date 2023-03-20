@@ -3,9 +3,13 @@
     <x-custom-head-component :seo="$article->seo" />
 @endsection
 @section('content')
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0"
+        nonce="zylgZq4n"></script>
     <div class="flex flex-col justify-start">
         <div class="w-full flex flex-row justify-center bg-primary">
-            <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
+            <div
+                class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
                 <x-top-bar-component class="bg-primary" />
             </div>
         </div>
@@ -19,7 +23,8 @@
                                 {{ $article->title }}</h1>
                         </div>
                         <img src="{{ isset($article->thumbnail->original) ? 'https://admin.natadesign.id/' . $article->thumbnail->original : asset('assets/favicon.svg') }}"
-                            class="w-full aspect-square mb-12" alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
+                            class="w-full aspect-square mb-12"
+                            alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
                         <x-common.divider-x-component class="" />
                         <div class="flex flex-row justify-between my-7 items-center">
                             <p class="text-partial text-xs font-dm-sans font-bold mr-1">Ditulis Oleh
@@ -29,6 +34,12 @@
                             </p>
                             <div class="flex flex-row ml-auto items-center">
                                 <p class="text-partial font-dm-sans font-bold text-base mr-6">Bagikan: </p>
+                                <div class="fb-share-button" data-href="https://test.natadesign.id/{{ $article->slug }}"
+                                    data-layout="" data-size="">
+                                    <a target="_blank"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                        class="fb-xfbml-parse-ignore">Share</a>
+                                </div>
                                 <a aria-label="Share this post" href="#"
                                     class="text-partial font-dm-sans font-bold grow text-end">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="28"
@@ -59,7 +70,8 @@
                             <p class="font-dm-sans text-secondary">Kategori: {{ $article->category->name }}</p>
                         </div>
                     </div>
-                    <div class="lg:flex md:flex sm:hidden ssm:hidden xs:hidden basis-1/3 lg:pl-12 md:pl-12 pl-0 flex-col bg-[#FFFBF2]">
+                    <div
+                        class="lg:flex md:flex sm:hidden ssm:hidden xs:hidden basis-1/3 lg:pl-12 md:pl-12 pl-0 flex-col bg-[#FFFBF2]">
                         <x-common.vertical-article-component :articles="$articles" title="Ulasan Terbaru" />
                         <a href='/media' aria-label='See More Media Review'
                             class="font-dm-sans text-partial">Selengkapnya</a>
