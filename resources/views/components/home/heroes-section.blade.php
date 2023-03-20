@@ -1,5 +1,5 @@
 <div class="page-section bg-gradient-to-b from-transparent to-primary opacity-0">
-    <div class="w-full flex flex-row justify-center h-screen">
+    <div class="w-full flex flex-row justify-center h-screen min-h-fit">
         <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] flex flex-col justify-between">
             <x-top-bar-component class="bg-transparent" />
             <div class="lg:px-20 md:px-0 sm:px-0">
