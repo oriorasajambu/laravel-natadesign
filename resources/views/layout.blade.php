@@ -32,7 +32,7 @@
 
     @yield('scripts')
 
-    <script src="{{ asset('js/jquery/menu.js') }}"></script>
+    <script src="{{ asset('js/jquery/menu.js') }}" defer></script>
 
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {
