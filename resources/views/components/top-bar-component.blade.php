@@ -50,7 +50,7 @@
             </ul>
         </div>
         <a href="/" aria-label='Homepage'
-            class="flex items-center lg:h-[67px] lg:w-[67px] md:h-[67px] md:w-[67px] sm:h-[67px] sm:w-[67px] landscape:h-10 landscape:w-10 portrait:h-10 portrait:w-10 xs:ml-1 relative">
+            class="flex items-center landscape:lg:h-[67px] landscape:lg:w-[67px] landscape:md:h-[67px] landscape:md:w-[67px] landscape:sm:h-[67px] landscape:sm:w-[67px] portrait:h-10 portrait:w-10 h-10 w-10 xs:ml-1 relative">
             <img src="{{ asset('assets/favicon.svg') }}" width="67" height="67" alt="Natadesign Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button" onclick="openMenu()"
