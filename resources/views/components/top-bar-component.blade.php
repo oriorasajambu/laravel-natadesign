@@ -1,4 +1,4 @@
-<nav class="landscape:lg:py-[57.5px] landscape:md:py-[57.5px] landscape:sm:py-5 portrait:lg:py-[57.5px] portrait:md:py-[57.5px] portrait:sm:py-5 py-5 lg:px-20 md:px-0 sm:px-0 relative {{$class}}">
+<nav class="landscape:lg:py-[57.5px] landscape:md:py-[57.5px] landscape:sm:py-5 landscape:ssm:py-5 landscape:xs:py-5 portrait:lg:py-[57.5px] portrait:md:py-[57.5px] portrait:sm:py-5 portrait:ssm:py-5 portrait:xs:py-5 lg:px-20 md:px-0 sm:px-0 relative {{$class}}">
     <div class='flex flex-wrap lg:flex-nowrap md:flex-nowrap sm:flex-nowrap ssm:flex-nowrap items-center justify-between w-full'>
         <div class="hidden w-full lg:block md:block sm:block ssm:block md:w-auto">
             <ul
