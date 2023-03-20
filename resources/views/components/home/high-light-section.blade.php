@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <a aria-label="See Our Gallery" href="/portofolio"
-                        class="flex sm:flex-1 ssm:flex-1 ssm:justify-between xs:flex-1 xs:justify-between items-center text-[#404040] font-dm-sans font-bold">
+                        class="flex ssm:flex-1 ssm:justify-between xs:flex-1 xs:justify-between items-center text-[#404040] font-dm-sans font-bold">
                         <p>Lihat Gallery Kami</p>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary ml-6" width="25.144"
