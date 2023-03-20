@@ -90,8 +90,8 @@ class PageController extends Controller
         $services = AvailableService::all();
         $employees = Employee::orderBy('position', 'ASC')->get();
         $aboutUs = AboutUs::first();
-        $topImages = TopImages::all();
-        $bottomImages = BottomImages::all();
+        $topImages = TopImages::orderBy('position', 'ASC')->get();
+        $bottomImages = BottomImages::orderBy('position', 'ASC')->get();
         $data = [
             'seo' => $seoCategory->seo,
             'topImages' => $topImages,
