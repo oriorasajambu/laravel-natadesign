@@ -25,7 +25,7 @@
                                 href="/information">Dapatkan Penawaran Gratis</a>
                         </div>
                     </div>
-                    <div class="portrait:animate-bounce hidden lg:mr-10 md:mr-5 sm:mr-3 lg:block md:block sm:block self-center">
+                    <div class="animate-bounce hidden lg:mr-10 md:mr-5 sm:mr-3 lg:block md:block sm:block self-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="167.953"
                             viewBox="0 0 16 167.953">
                             <g id="Group_28" data-name="Group 28" transform="translate(-1)" opacity="0.5">
