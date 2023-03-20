@@ -122,8 +122,8 @@
                                 </div>
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>
-                                <div class="grow font-dm-sans text-partial text-xl leading-normal flex-1">
-                                    <p>Brand Designers & <br class="lg:block hidden" /> Social Media Consultant</p>
+                                <div class="grow flex-1">
+                                    <p class="font-dm-sans text-partial lg:text-xl lg:basis-2/3 md:basis-3/4 sm:basis-4/5 ssm:basis-4/5 xs:basis-4/5 leading-8">Brand Designers & <br class="lg:block hidden" /> Social Media Consultant</p>
                                 </div>
                             </div>
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
@@ -133,8 +133,8 @@
                                 </div>
                                 <div class="w-0.5 bg-partial h-[90px] xs:hidden">
                                 </div>
-                                <div class="grow font-dm-sans text-partial text-xl leading-normal flex-1">
-                                    <p>Architecture & Interiors,
+                                <div class="grow flex-1">
+                                    <p class="font-dm-sans text-partial lg:text-xl lg:basis-2/3 md:basis-3/4 sm:basis-4/5 ssm:basis-4/5 xs:basis-4/5 leading-8">Architecture & Interiors,
                                         <br class="lg:block hidden" />
                                         Custom Furniture,
                                         <br class="lg:block hidden" />

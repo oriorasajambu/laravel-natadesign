@@ -4,12 +4,12 @@
             <x-top-bar-component class="bg-transparent" />
             <div class="lg:px-20 md:px-0 sm:px-0">
                 <div class="flex flex-wrap sm:flex-nowrap flex-row justify-between my-auto">
-                    <div class="flex-1 xl:flex-none lg:flex-none md:flex-none sm:flex-none">
+                    <div class="flex-1 xl:flex-none lg:flex-none md:flex-none sm:flex-none flex flex-col landscape:gap-6 portrait:gap-12">
                         <h1 id="title" data-value="Nat.a Design"
                             class="text-center lg:text-left md:text-left sm:text-left lg:text-[80px] md:text-[64px] sm:text-[64px] text-5xl text-white font-play-serif font-bold">
                             Nat.a Design
                         </h1>
-                        <div class="my-12">
+                        <div>
                             <p
                                 class="text-center lg:text-left md:text-left sm:text-left lg:text-2xl md:text-xl text-base text-white font-dm-sans">
                                 Arsitek dan Interior Desain spesialis
@@ -19,13 +19,13 @@
                                 di bidang F&B sejak 2014.
                             </p>
                         </div>
-                        <div class="sm:w-[266px] md:w-[310px] ssm:w-[400px] ssm:mx-auto">
+                        <div class="md:w-[310px] sm:w-[266px] ssm:w-[400px] landscape:w-[310px] ssm:mx-auto">
                             <a aria-label="Promotion" tabIndex={0}
-                                class="text-primary bg-white text-center lg:text-base md:text-base sm:text-sm xs:text-sm font-dm-sans font-bold uppercase rounded-full border px-6 py-6 block"
+                                class="text-primary bg-white text-center lg:text-base md:text-base sm:text-sm xs:text-sm font-dm-sans font-bold uppercase rounded-full border portrait:px-6 portrait:py-6 landscape:px-3 landscape:py-5 block"
                                 href="/information">Dapatkan Penawaran Gratis</a>
                         </div>
                     </div>
-                    <div class="animate-bounce hidden lg:mr-10 md:mr-5 sm:mr-3 lg:block md:block sm:block self-center">
+                    <div class="portrait:animate-bounce hidden lg:mr-10 md:mr-5 sm:mr-3 lg:block md:block sm:block self-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="167.953"
                             viewBox="0 0 16 167.953">
                             <g id="Group_28" data-name="Group 28" transform="translate(-1)" opacity="0.5">

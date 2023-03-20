@@ -1,4 +1,4 @@
-<nav class="lg:py-[57.5px] py-5 lg:px-20 md:px-0 sm:px-0 relative {{$class}}">
+<nav class="lg:py-[57.5px] landscape:py-0 portrait:py-5 lg:px-20 md:px-0 sm:px-0 relative {{$class}}">
     <div class='flex flex-wrap lg:flex-nowrap md:flex-nowrap sm:flex-nowrap ssm:flex-nowrap items-center justify-between w-full'>
         <div class="hidden w-full lg:block md:block sm:block ssm:block md:w-auto">
             <ul
@@ -50,7 +50,7 @@
             </ul>
         </div>
         <a href="/" aria-label='Homepage'
-            class="flex items-center lg:h-[67px] lg:w-[67px] md:h-[67px] md:w-[67px] sm:h-[67px] sm:w-[67px] h-10 w-10 xs:ml-1 relative">
+            class="flex items-center lg:h-[67px] lg:w-[67px] md:h-[67px] md:w-[67px] sm:h-[67px] sm:w-[67px] landscape:h-10 landscape:w-10 portrait:h-10 portrait:w-10 xs:ml-1 relative">
             <img src="{{ asset('assets/favicon.svg') }}" width="67" height="67" alt="Natadesign Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button" onclick="openMenu()"

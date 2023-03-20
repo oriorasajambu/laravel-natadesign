@@ -14,10 +14,9 @@
                 <div class="flex flex-row sm:flex-col xs:flex-col gap-[1px] bg-primary mt-20">
                     <div class="lg:basis-2/3 md:basis-2/3 flex-1 lg:pr-12 md:pr-12 pr-0 bg-[#FFFBF2] flex flex-col">
                         <div class="flex flex-row justify-between items-center mb-10">
-                            <h1
-                                class="text-primary uppercase font-dm-sans font-bold text-4xl lg:text-[48px] md:text-5xl leading-tight">
+                            <x-common.subtitle-component class="uppercase text-primary">
                                 Kontak
-                            </h1>
+                            </x-common.subtitle-component>
                         </div>
                     </div>
                 </div>
