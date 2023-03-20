@@ -1,4 +1,4 @@
-<div class="lg:py-20 py-10 lg:px-20 md:px-0 sm:px-0">
+<div class="landscape:lg:py-20 landscape:md:py-20 landscape:sm:py-10 landscape:ssm:py-5 landscape:xs:py-5 portrait:lg:py-20 portrait:md:py-20 portrait:sm:py-10 portrait:ssm:py-5 portrait:xs:py-5 lg:px-20 md:px-0 sm:px-0">
     <div
         class="flex lg:flex-row md:flex-row sm:flex-row flex-row-reverse lg:flex-nowrap md:flex-nowrap sm:flex-nowrap flex-wrap items-center justify-center lg:justify-between">
         <p
