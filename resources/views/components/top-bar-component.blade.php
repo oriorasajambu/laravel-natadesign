@@ -2,7 +2,7 @@
     <div class='flex flex-wrap lg:flex-nowrap md:flex-nowrap sm:flex-nowrap ssm:flex-nowrap items-center justify-between w-full'>
         <div class="hidden w-full lg:block md:block sm:block ssm:block md:w-auto">
             <ul
-                class="flex pl-0 py-4 mt-4 ssm:mt-0 sm:mt-0 lg:flex-row md:flex-row sm:flex-row lg:space-x-8 md:space-x-8 lg:mt-0 md:mt-0 lg:text-sm md:text-sm sm:text-sm lg:font-medium md:font-medium sm:font-medium lg:border-0 md:border-0 sm:border-0">
+                class="flex pl-0 mt-4 ssm:mt-0 sm:mt-0 lg:flex-row md:flex-row sm:flex-row lg:space-x-8 md:space-x-8 lg:mt-0 md:mt-0 lg:text-sm md:text-sm sm:text-sm lg:font-medium md:font-medium sm:font-medium lg:border-0 md:border-0 sm:border-0">
                 <li>
                     <a class="block py-2 pl-0 pr-3 text-white lg:text-lg md:text-sm font-dm-sans border-b-2 border-transparent md:bg-transparent md:p-0 hover:border-white"
                         href="/" aria-label='Home' tabIndex=0>Beranda</a>
