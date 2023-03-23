@@ -31,7 +31,8 @@
 
     <x-home.workflows-section :workflows="$workflows" />
 
-    <x-common.project-section class="pt-20" classTitle="text-primary lg:text-center md:text-center sm:text-start xs:text-start leading-none" showButton=false>
+    <x-common.project-section class="pt-20"
+        classTitle="text-primary lg:text-center md:text-center sm:text-start xs:text-start leading-none" showButton=false>
         <x-common.project-component :albums="$albums" />
     </x-common.project-section>
 
@@ -45,7 +46,7 @@
 
     <x-home.testimony-section>
         @foreach ($testimonies as $testimony)
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="3000">
                 <blockquote
                     class="italic leading-9 font-play-serif text-partial lg:text-4xl md:text-2xl sm:text-xl xs:text-base text-center">
                     &quot;{{ $testimony->content }}&quot;
@@ -86,6 +87,9 @@
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
             });
         }
     </script>
