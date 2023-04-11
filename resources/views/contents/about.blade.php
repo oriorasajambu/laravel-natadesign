@@ -101,7 +101,7 @@
             <div class="lg:w-[1200px] md:w-[864px] sm:w-[608px] ssm:w-full ssm:px-10 xs:w-[280px] lg:px-20 md:px-0 sm:px-0">
                 <div class="items2 overflow-x-scroll hide-scrollbar overflow-y-hidden flex flex-nowrap lg:gap-x-6 md:gap-x-6 sm:gap-x-3 xs:gap-x-2 m-0">
                     @foreach ($bottomImages as $key => $bottomImage)
-                        <img src="https://admin.natadesign.id/{{ $bottomImage->image }}" loading="lazy" width="550" height="550"
+                        <img src="https://admin.natadesign.id/{{ $bottomImage->original }}" loading="lazy" width="550" height="550"
                             alt="{{ $bottomImage->alt }}"
                             class="select-none {{ $key != 0 ? 'ml-3' : '' }} lg:h-[550px] md:h-[450px] sm:h-[350px] ssm:h-[300px] xs:h-[250px] aspect-square relative" />
                     @endforeach
