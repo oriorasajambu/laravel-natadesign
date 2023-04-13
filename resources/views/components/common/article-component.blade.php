@@ -18,11 +18,10 @@
                     </div>
                 </article>
             @else
-                <article class="flex flex-col gap-6 relative">
-                    <a aria-label={{ $article->title }} class="lg:block md:block sm:block ssm:hidden xs:hidden"
+                <article class="flex flex-col gap-6 relative lg:block md:block sm:block ssm:hidden xs:hidden">
+                    <a aria-label={{ $article->title }}
                         href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}"
-                        class="absolute w-full h-full">
-                    </a>
+                        class="absolute w-full h-full"></a>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <h2
                         class="text-partial font-dm-sans font-bold lg:text-xl md:text-xl sm:text-xl ssm:text-base xs:text-base truncate">
