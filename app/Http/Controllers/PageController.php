@@ -28,7 +28,7 @@ class PageController extends Controller
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();
         $clients = Client::orderBy('position', 'DESC')->get();
         $testimonies = Testimony::orderBy('position', 'ASC')->get();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $motto = Motto::first();
         $faqs = Faq::all();
         $contact = Contact::first();
@@ -52,7 +52,7 @@ class PageController extends Controller
     public function portofolio()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->paginate(9);
         $contact = Contact::first();
         $data = [
@@ -67,7 +67,7 @@ class PageController extends Controller
     public function portofolioDetail(Album $album)
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%portofolio%')->firstOrFail();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
@@ -84,7 +84,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%about%')->firstOrFail();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $contact = Contact::first();
         $motto = Motto::first();
         $services = AvailableService::all();
@@ -110,8 +110,8 @@ class PageController extends Controller
     public function articles()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%articles%')->firstOrFail();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->paginate(9);
-        $medias = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->paginate(9);
+        $medias = Post::where('category_id', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
@@ -128,7 +128,7 @@ class PageController extends Controller
     {
         $contact = Contact::first();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
-        $articles = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
             'albums' => $albums,
@@ -141,8 +141,8 @@ class PageController extends Controller
     public function media()
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%articles%')->firstOrFail();
-        $medias = Post::where('category_id', 1)->orderBy('published_at', 'ASC')->paginate(9);
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $medias = Post::where('category_id', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->paginate(9);
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $contact = Contact::first();
         $data = [
@@ -159,7 +159,7 @@ class PageController extends Controller
     {
         $contact = Contact::first();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $data = [
             'article' => $post,
             'albums' => $albums,
@@ -173,7 +173,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%contact%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $data = [
             'seo' => $seoCategory->seo,
@@ -188,7 +188,7 @@ class PageController extends Controller
     {
         $seoCategory = SeoCategory::where('name', 'LIKE', '%information%')->firstOrFail();
         $contact = Contact::first();
-        $articles = Post::where('category_id', '!=', 1)->orderBy('published_at', 'ASC')->take(3)->get();
+        $articles = Post::where('category_id', '!=', 1)->whereNotNull('published_at')->orderBy('published_at', 'ASC')->take(3)->get();
         $albums = Album::orderBy('position', 'DESC')->take(3)->get();;
         $data = [
             'seo' => $seoCategory->seo,
