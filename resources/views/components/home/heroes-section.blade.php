@@ -16,7 +16,7 @@
                             </p>
                             <p
                                 class="text-center lg:text-left md:text-left sm:text-left lg:text-2xl md:text-xl text-base text-white font-dm-sans">
-                                di bidang F&B sejak 2014.
+                                di bidang F&B dan Commercial sejak 2014.
                             </p>
                         </div>
                         <div class="md:w-[310px] sm:w-[266px] ssm:w-[400px] landscape:w-[310px] ssm:mx-auto">
