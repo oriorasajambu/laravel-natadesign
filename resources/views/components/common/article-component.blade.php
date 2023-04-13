@@ -20,7 +20,8 @@
             @else
                 <article class="flex flex-col gap-6 relative">
                     <a aria-label={{ $article->title }} class="lg:block md:block sm:block ssm:hidden xs:hidden"
-                        href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}" class="absolute w-full h-full">
+                        href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}"
+                        class="absolute w-full h-full">
                     </a>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <h2
@@ -34,8 +35,8 @@
                         alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" />
                 </article>
             @endif
-            <article class="flex flex-col lg:gap-6 md:gap-6 ssm:gap-3 sm:gap-3 xs:gap-3 relative"
-                class="lg:hidden md:hidden sm:hidden ssm:block xs:block">
+            <article
+                class="flex flex-col lg:gap-6 md:gap-6 ssm:gap-3 sm:gap-3 xs:gap-3 relative lg:hidden md:hidden sm:hidden ssm:block xs:block">
                 <a aria-label={{ $article->title }}
                     href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}"
                     class="absolute w-full h-full"></a>
