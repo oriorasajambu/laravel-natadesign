@@ -5,7 +5,7 @@
                 {{-- Previous Page Link --}}
                 @if (!$paginator->onFirstPage())
                     <a href="{{ $paginator->previousPageUrl() }}" rel="prev"
-                        class="relative inline-flex items-center justify-center w-11 py-2" aria-label="{{ __('pagination.previous') }}">
+                        class="relative inline-flex items-center justify-center w-8 py-2" aria-label="{{ __('pagination.previous') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25.144" height="14.382"
                             viewBox="0 0 25.144 14.382">
                             <g id="Group_376" data-name="Group 376" transform="translate(-578.793 -2186.809)">
@@ -34,13 +34,13 @@
                         @foreach ($element as $page => $url)
                             @if ($page == $paginator->currentPage())
                                 <span role="button"
-                                    class="relative inline-flex items-center justify-center w-11 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-primary text-white"
+                                    class="relative inline-flex items-center justify-center w-8 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-primary text-white"
                                     aria-current="page">
                                     {{ $page }}
                                 </span>
                             @else
                                 <a href="{{ $url }}"
-                                    class="relative inline-flex items-center justify-center w-11 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-[#FFFBF2] text-primary"
+                                    class="relative inline-flex items-center justify-center w-8 py-2 -ml-px font-dm-sans font-bold border-2 border-partial rounded-sm bg-[#FFFBF2] text-primary"
                                     aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
                                     {{ $page }}
                                 </a>
@@ -52,7 +52,7 @@
                 {{-- Next Page Link --}}
                 @if ($paginator->hasMorePages())
                     <a href="{{ $paginator->nextPageUrl() }}" rel="next"
-                        class="relative inline-flex items-center justify-center w-11 py-2 -ml-px"
+                        class="relative inline-flex items-center justify-center w-8 py-2 -ml-px"
                         aria-label="{{ __('pagination.next') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25.144" height="14.382"
                             viewBox="0 0 25.144 14.382">
