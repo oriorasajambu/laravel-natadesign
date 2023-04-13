@@ -5,7 +5,7 @@
                 <article class="flex flex-col gap-6 relative" class="lg:block md:block sm:block ssm:hidden xs:hidden">
                     <a aria-label={{ $article->title }}
                         href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}"
-                        class="absolute top-0 bottom-0 left-0 right-0"></a>
+                        class="absolute w-full h-full"></a>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <img src="{{ isset($article->thumbnail->image) ? 'https://admin.natadesign.id/' . $article->thumbnail->image : asset('assets/favicon.svg') }}"
                         class="basis-[19%] w-full grow aspect-square" loading="lazy"
@@ -20,7 +20,7 @@
             @else
                 <article class="flex flex-col gap-6 relative">
                     <a aria-label={{ $article->title }} class="lg:block md:block sm:block ssm:hidden xs:hidden"
-                        href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}" class="absolute top-0 bottom-0 left-0 right-0">
+                        href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}" class="absolute w-full h-full">
                     </a>
                     <x-common.date-component date='{{ $article->published_at }}' />
                     <h2
@@ -38,7 +38,7 @@
                 class="lg:hidden md:hidden sm:hidden ssm:block xs:block">
                 <a aria-label={{ $article->title }}
                     href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}"
-                    class="absolute top-0 bottom-0 left-0 right-0"></a>
+                    class="absolute w-full h-full"></a>
                 <h2
                     class="text-partial font-dm-sans font-bold lg:text-xl md:text-xl sm:text-xl ssm:text-base xs:text-base truncate">
                     {{ $article->title }}</h2>
