@@ -30,7 +30,7 @@
                     </article>
                 </a>
             @endif
-            <a aria-label={{ $article->title }} class="lg:hidden md:hidden sm:hidden ssm:block xs:block"
+            <a aria-label={{ $article->title }} class="lg:invisible md:invisible sm:invisible ssm:block xs:block"
                 href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
                 <article class="flex flex-col lg:gap-6 md:gap-6 ssm:gap-3 sm:gap-3 xs:gap-3">
                     <h2 class="text-partial font-dm-sans font-bold lg:text-xl md:text-xl sm:text-xl ssm:text-base xs:text-base truncate">{{ $article->title }}</h2>
