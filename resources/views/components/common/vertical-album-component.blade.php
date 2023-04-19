@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 my-12 gap-6">
+<div class="grid grid-cols-1 my-12 gap-y-16">
     @foreach ($albums as $key => $album)
         <a aria-label="{{ $album->title }}" href="/portofolio/{{ $album->slug }}">
             <div class="grid grid-cols-1">
