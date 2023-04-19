@@ -1,7 +1,7 @@
 <div class="grid grid-cols-1 my-12 gap-6">
     @foreach ($albums as $key => $album)
         <a aria-label="{{ $album->title }}" href="/portofolio/{{ $album->slug }}">
-            <div class="grid grid-cols-1 gap-y-16">
+            <div class="grid grid-cols-1">
                 <h2 class="font-dm-sans font-bold text-partial text-2xl mb-1">{{ $album->title }}</h2>
                 <p class="text-partial font-dm-sans text-xs leading-6 line-clamp-3 mb-3">
                     {{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}</p>
