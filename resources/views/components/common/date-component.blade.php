@@ -1,1 +1,1 @@
-<span class="text-partial font-dm-sans font-bold text-xs">{{ date_format(date_create($date), 'l, d F Y') }}</span>
+<span class="text-partial font-dm-sans font-bold text-xs {{ $class }}">{{ date_format(date_create($date), 'l, d F Y') }}</span>

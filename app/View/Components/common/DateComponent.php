@@ -8,15 +8,17 @@ use Illuminate\View\Component;
 class DateComponent extends Component
 {
     public string $date;
+    public string $class;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $date)
+    public function __construct(string $date, string $class = "")
     {
         $this->date = Carbon::parse($date)->format('l, d F Y');
+        $this->class = $class;
     }
 
     /**
