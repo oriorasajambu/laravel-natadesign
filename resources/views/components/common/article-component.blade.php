@@ -1,5 +1,5 @@
 <div class="flex flex-col gap-6">
-    <div class="grid grid-cols-3 xs:grid-cols-1 lg:gap-x-6 md:gap-x-6 sm:gap-x-6 ssm:gap-x-8 xs:gap-x-8 lg:gap-y-12 md:gap-y-14 sm:gap-y-14 ssm:gap-y-14 xs:gap-y-14 lg:mt-20 mt-10">
+    <div class="grid grid-cols-3 xs:grid-cols-1 lg:gap-x-6 md:gap-x-6 sm:gap-x-6 ssm:gap-x-8 xs:gap-x-8 lg:gap-y-12 md:gap-y-16 sm:gap-y-16 ssm:gap-y-16 xs:gap-y-16 lg:mt-20 mt-10">
         @foreach ($articles as $key => $article)
             @if ($key % 2 == 0)
                 <article class="relative lg:block md:block sm:block ssm:hidden xs:hidden">
