@@ -2,9 +2,9 @@
     <div class="grid grid-cols-3 xs:grid-cols-1 w-full gap-6 lg:mt-20 mt-10">
         @foreach ($albums as $album)
             <a aria-label={{ $album->title }} href="/portofolio/{{ $album->slug }}">
-                <div class="flex flex-col lg:gap-6 md:gap-6 sm:gap-3 ssm:gap-3 xs:gap-3">
+                <div class="flex flex-col">
                     <div class="flex flex-row justify-between items-center">
-                        <h2 class="lg:text-2xl md:text-xl text-partial font-dm-sans font-bold truncate">
+                        <h2 class="lg:text-2xl md:text-xl text-partial font-dm-sans font-bold truncate mb-1">
                             {{ $album->title }}
                         </h2>
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-partial" width="25.144" height="14.382"
@@ -19,7 +19,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="flex-row justify-between text-partial text-base font-dm-sans">
+                    <div class="flex-row justify-between text-partial text-base font-dm-sans mb-3">
                         <p>{{ isset($album->cover->alt) ? $album->cover->alt : $album->title }}</p>
                     </div>
                     <img src="{{ isset($album->cover->image) ? 'https://admin.natadesign.id/' . $album->cover->image : asset('assets/favicon.svg') }}"
