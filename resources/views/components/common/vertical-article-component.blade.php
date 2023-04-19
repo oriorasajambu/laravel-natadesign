@@ -3,7 +3,7 @@
     @foreach ($articles as $key => $article)
         <a aria-label="{{ $article->title }}"
             href="{{ $article->category->name == 'Ulasan Media' ? '/media' : '/articles' }}/{{ $article->slug }}">
-            <div class="grid grid-cols-1 mt-12">
+            <div class="grid grid-cols-1 mt-16">
                 <img class="w-full aspect-square mb-3" src="{{ isset($article->thumbnail->image) ? 'https://admin.natadesign.id/' . $article->thumbnail->image : asset('assets/favicon.svg') }}"
                         alt="{{ isset($article->thumbnail->alt) ? $article->thumbnail->alt : $article->title }}" width="239" height="239" loading="lazy" />
                 <h3 class="mt-6 font-dm-sans font-bold text-2xl text-partial mb-1">{{ $article->title }}</h3>
