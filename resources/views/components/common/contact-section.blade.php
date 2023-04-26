@@ -116,7 +116,7 @@
                         <div class="flex flex-col gap-6 lg:gap-12 flex-1">
                             <p class="text-partial font-dm-sans font-bold lg:text-xl xs:text-center">Subsidiary</p>
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
-                                <a class="w-[67px] h-[52px]" aria-label="Oiji Instagram" href="https://www.instagram.com/oijiistudio/">
+                                <a class="w-[67px] h-[52px]" aria-label="Oiji Instagram" rel="external" target="_blank" href="https://www.instagram.com/oijiistudio/">
                                     <img src={{ asset('assets/oiji_icon.png') }} width="67" height="52"
                                         alt="Logo Oiji" loading="lazy" />
                                 </a>
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-row xs:flex-1 xs:gap-6 gap-12 items-center h-[90px]">
-                                <a class="w-[67px] h-[70px]" aria-label="Andara Instagram" href="https://www.instagram.com/andaragroup/">
+                                <a class="w-[67px] h-[70px]" aria-label="Andara Instagram" rel="external" target="_blank" href="https://www.instagram.com/andaragroup/">
                                     <img src={{ asset('assets/A_icon.png') }} width="67" height="70"
                                         alt="Logo Andara" loading="lazy" />
                                 </a>
