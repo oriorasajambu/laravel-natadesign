@@ -20,7 +20,7 @@
             <p class="basis-1/6 text-2xl xs:text-xl font-dm-sans invisible">00</p>
         @endif
         <p class="basis-5/6 text-base text-start ">
-            {{ $content }}
+            {!! $content !!}
         </p>
         <div></div>
     </div>
